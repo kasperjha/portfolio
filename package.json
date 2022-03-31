@@ -1,0 +1,24 @@
+{
+  "name": "kakka.dev",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production npx postcss styles.css -o compiled.css",
+    "build-dev": "cross-env NODE_ENV=development npx postcss styles.css -o compiled.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "miragejs": "^0.1.41",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.3",
+    "webpack": "^5.25.0"
+  }
+}
