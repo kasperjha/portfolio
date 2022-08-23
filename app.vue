@@ -10,11 +10,12 @@
         <main class="flex-grow">
             <NuxtPage />
         </main>
-        <footer class="py-4 text-sm italic text-gray-700">
-            developed with <a class="underline" href="https://nuxtjs.org">nuxt</a>,
-            <a class="underline" href="https://vuejs.org/">vue</a> and
-            <a class="underline" href="https://tailwindcss.com">tailwind</a>
-            by me
+        <footer class="flex justify-center py-4 text-xs italic text-gray-700">
+            <p>
+                developed with <a class="underline" href="https://nuxtjs.org">nuxt</a>,
+                <a class="underline" href="https://vuejs.org/">vue</a> and
+                <a class="underline" href="https://tailwindcss.com">tailwind</a>
+            </p>
         </footer>
     </section>
 </template>
