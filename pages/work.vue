@@ -20,3 +20,10 @@
         </p>
     </div>
 </template>
+
+<script setup>
+useHead({
+    title: 'kakka.dev - work',
+    meta: [{ name: 'description', content: 'Completed client work by Kasper JHA. Latest project is portfolio site for Orkidé (orkide.world).'}]
+});
+</script>

@@ -28,6 +28,7 @@ useHead({
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
-    ]
+    ],
+    meta: [{ name: 'description', content: 'Portfolio website for developer and designer Kasper JHA. Builds cool websites for cool people. Including orkide.world for Orkidé.' }]
 })
 </script>
