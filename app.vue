@@ -7,7 +7,7 @@
             <NuxtLink class="ml-auto" to="/contact">contact</NuxtLink>
             <NuxtLink to="/work">work</NuxtLink>
         </nav>
-        <main class="flex-grow">
+        <main class="flex-grow py-5">
             <NuxtPage />
         </main>
         <footer class="flex justify-center py-4 text-xs italic text-gray-700">
