@@ -21,4 +21,10 @@
 </template>
 
 <script setup>
+useHead({
+    title:'kakka.dev',
+    script:[
+        {src:'https://plausible.kakka.dev/js/plausible.js', 'data-domain':'kakka.dev'}
+    ]
+})
 </script>
