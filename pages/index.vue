@@ -21,5 +21,11 @@
         <NuxtLink to="/work" >WORK</NuxtLink>
       </BrandGradient>
     </div>
+
+    <p class="max-w-lg">
+      Most recently <NuxtLink>built a portfolio website for Orkidé.</NuxtLink> I helped them emphasize their originality with a untraditional colorway
+      and a bold attention demanding design.
+    </p>
+
   </div>
 </template>
