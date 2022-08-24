@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="max-w-lg space-y-5">
         <p>
             Here are the mandatory social media links.
             It's random stuff mostly, but sometimes I post about current projects.
         </p>
 
-        <div class="flex flex-col items-start gap-3 my-12 ml-6 text-3xl uppercase">
+        <div class="flex flex-col items-start gap-3 py-5 ml-5 text-3xl uppercase">
             <BrandGradient class="flex">
                 <a href="https://instagram.com/kasper.jha">instagram</a>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mt-1 ml-1">
@@ -24,7 +24,7 @@
             Want to do a project with me or just discuss DIY electronics?
         </p>
 
-        <p class="mt-6 ml-6">
+        <p class="py-5 ml-5">
             Email me anytime at <br>
             <a class="underline" href="mailto:kakka0903@hotmail.no">kakka0903@hotmail.no</a>
         </p>
