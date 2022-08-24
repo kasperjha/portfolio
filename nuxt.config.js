@@ -2,6 +2,8 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    target: 'static',
+    ssr:true,
     buildModules: ['@nuxtjs/tailwindcss'],
 
     // Global page headers: https://go.nuxtjs.dev/config-head
