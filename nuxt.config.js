@@ -4,7 +4,12 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
     target: 'static',
     ssr:true,
-    buildModules: ['@nuxtjs/tailwindcss'],
+    buildModules: ['@nuxtjs/tailwindcss', 'vue-plausible'],
+
+    plausible: {
+        domain:'kakka.dev',
+        apiHost:'https://plausible.kakka.dev'
+    },
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
