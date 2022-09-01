@@ -24,7 +24,7 @@
 useHead({
     title:'kakka.dev',
     script:[
-        { defer:'defer', src:'https://plausible.kakka.dev/js/plausible.js', 'data-domain':'kakka.dev'}
+        { defer:'defer', src:'https://plausible.kakk.dev/js/plausible.js', 'data-domain':'kakka.dev'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
