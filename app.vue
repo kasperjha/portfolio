@@ -14,9 +14,9 @@
             </main>
             <footer class="flex justify-center py-4 text-xs italic text-gray-700">
                 <p>
-                    developed with <a class="underline" href="https://nuxtjs.org">nuxt</a>,
-                    <a class="underline" href="https://vuejs.org/">vue</a> and
-                    <a class="underline" href="https://tailwindcss.com">tailwind</a>
+                    Developed with <text-link link="https://nuxtjs.org">Nuxt</text-link>,
+                    <text-link link="https://nuxtjs.org">Vue</text-link> and
+                    <text-link link="https://tailwindcss.com">Tailwind</text-link>. View <text-link link="https://github.com/kakka0903/kakka.dev">on GitHub</text-link>.
                 </p>
             </footer>
         </section>
