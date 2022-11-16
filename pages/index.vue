@@ -7,9 +7,9 @@
     </h1>
 
     <p class="max-w-lg">
-      I am a developer and designer from Oslo.
-      During daytime i study for a CompSci degree, but on the side i enjoy building
-      cool websites for cool people.
+      I am freelance web developer and designer from Oslo.
+      Currently I study Computing Science at Rijksuniversiteit Groningen,
+      and make websites in my spare time.
     </p>
 
 
@@ -23,8 +23,9 @@
     </div>
 
     <p class="max-w-lg">
-      Most recently built a <TextLink link="https://orkide.world">portfolio website for Orkidé</TextLink>. I helped them emphasize their originality with a untraditional colorway
-      and a bold attention-demanding design.
+      Most recently I built a portfolio for Orkidé.
+      He is a music video producer for rap groups in Oslo.
+      The website has a untraditional colorway and bold design. <text-link link="https://orkide.world">Check it out!</text-link>
     </p>
 
   </div>

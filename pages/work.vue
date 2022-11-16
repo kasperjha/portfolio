@@ -1,8 +1,8 @@
 <template>
     <div class="max-w-lg space-y-5">
         <p>
-            My work is influenced by an interest in graphic
-            design, user experience, and a strong passion for techonology.
+            These are website projects i've done freelancing so far.
+            Don't tell my clients, but I hide secrets in all of them.
         </p>
 
         <div class="flex flex-col items-start gap-3 py-5 ml-5 text-3xl">
@@ -15,8 +15,8 @@
         </div>
 
         <p>
-            The links above are completed commisions 100% designed and developed by me. There is more to come soon, but if you would like to see more of my work
-            <TextLink link="/contact">contact me</TextLink> and i'll send some over.
+            Please <TextLink link="/contact">shoot me an email</TextLink> if you're curios about anything!
+            I have no trade secrets and love talking shop.
         </p>
     </div>
 </template>

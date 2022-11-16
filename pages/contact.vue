@@ -1,8 +1,7 @@
 <template>
     <div class="max-w-lg space-y-5">
         <p>
-            Here are the mandatory social media links.
-            It's random stuff mostly, but sometimes I post about current projects.
+            Follow me here for the occasional webdev related post:
         </p>
 
         <div class="flex flex-col items-start gap-3 py-5 ml-5 text-3xl uppercase">
@@ -27,11 +26,11 @@
         </div>
 
         <p>
-            Want to do a project with me or just discuss DIY electronics?
+            Do you know how to ride a bike without hands? or want a website?
         </p>
 
         <p class="py-5 ml-5">
-            Email me anytime at <br>
+            Tell me about it at: <br>
             <a class="underline" href="mailto:kakka0903@hotmail.no">kakka0903@hotmail.no</a>
         </p>
 
