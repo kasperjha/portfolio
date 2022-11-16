@@ -23,7 +23,7 @@
     </div>
 
     <p class="max-w-lg">
-      Most recently built a <NuxtLink class="underline" to="/contact">portfolio website for Orkidé</NuxtLink>. I helped them emphasize their originality with a untraditional colorway
+      Most recently built a <TextLink link="https://orkide.world">portfolio website for Orkidé</TextLink>. I helped them emphasize their originality with a untraditional colorway
       and a bold attention-demanding design.
     </p>
 

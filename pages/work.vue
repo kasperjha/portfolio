@@ -16,7 +16,7 @@
 
         <p>
             The links above are completed commisions 100% designed and developed by me. There is more to come soon, but if you would like to see more of my work
-            <NuxtLink class="underline" to="/contact">contact me</NuxtLink> and i'll send some over.
+            <TextLink link="/contact">contact me</TextLink> and i'll send some over.
         </p>
     </div>
 </template>
