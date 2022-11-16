@@ -2,7 +2,7 @@
     <div class="max-w-lg space-y-5">
         <p>
             My work is influenced by an interest in graphic
-            design and user experience, and a strong passion for techonology.
+            design, user experience, and a strong passion for techonology.
         </p>
 
         <div class="flex flex-col items-start gap-3 py-5 ml-5 text-3xl">
