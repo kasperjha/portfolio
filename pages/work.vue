@@ -2,7 +2,7 @@
     <div class="max-w-lg space-y-5">
         <p>
             These are website projects i've done freelancing so far.
-            Don't tell my clients, but I hide secrets in all of them.
+            Don't tell my clients, but I hide a secret in all of them.
         </p>
 
         <div class="flex flex-col items-start gap-3 py-5 ml-5 text-3xl">
