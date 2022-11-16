@@ -13,11 +13,11 @@
     </p>
 
 
-    <div class="flex flex-col items-end gap-3 text-3xl">
-      <BrandGradient class="transition hover:-translate-x-4">
+    <div class="flex flex-col gap-3 items-end text-3xl">
+      <BrandGradient class="transition ease-in-out duration-300 hover:-translate-x-4">
         <NuxtLink to="/contact">CONTACT</NuxtLink>
       </BrandGradient>
-      <BrandGradient class="transition hover:-translate-x-4">
+      <BrandGradient class="transition ease-in-out duration-300 hover:-translate-x-4">
         <NuxtLink to="/work" >WORK</NuxtLink>
       </BrandGradient>
     </div>
