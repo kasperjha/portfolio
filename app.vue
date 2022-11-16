@@ -2,11 +2,10 @@
     <div class="flex w-full justify-center bg-gray-100">
         <section class="max-w-xl w-full flex flex-col min-h-screen px-8 font-mono text-gray-900">
             <nav class="flex w-full pt-6 pb-4 gap-x-4">
-                <NuxtLink class="flex items-center font-bold" to="/">
-                    kakka.dev
-                </NuxtLink>
-                <NuxtLink class="ml-auto" to="/contact">contact</NuxtLink>
-                <NuxtLink to="/work">work</NuxtLink>
+                <NavItem destination="/" name="kakka.dev" class="font-bold mr-auto"/>
+                <NavItem destination="/contact" name="contact" />
+                <NavItem destination="/work" name="work" />
+                <NavItem destination="https://plausible.kakk.dev/kakka.dev" name="stats" external/>
             </nav>
             <main class="flex-grow py-5">
                 <NuxtPage />
