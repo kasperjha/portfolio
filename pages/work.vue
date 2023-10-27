@@ -20,7 +20,7 @@
         </div>
 
         <p>
-            <TextLink link="/contact">Send me an email</TextLink> if you're curiuos about anything!
+            <TextLink link="/contact">Send me an email</TextLink> if you're curious about anything.
         </p>
     </div>
 </template>
