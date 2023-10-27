@@ -7,7 +7,7 @@
     </h1>
 
     <p class="max-w-lg">
-      I am freelance web developer and designer from Oslo.
+      I am a freelance web developer and designer from Oslo.
       Currently I study Computing Science at Rijksuniversiteit Groningen,
       and make websites in my spare time.
     </p>
@@ -18,7 +18,7 @@
         <NuxtLink to="/contact">CONTACT</NuxtLink>
       </BrandGradient>
       <BrandGradient class="transition ease-in-out duration-300 hover:-translate-x-4">
-        <NuxtLink to="/work" >WORK</NuxtLink>
+        <NuxtLink to="/work">WORK</NuxtLink>
       </BrandGradient>
     </div>
 
@@ -27,6 +27,5 @@
       He is a music video producer for rap groups in Oslo.
       The website has a untraditional colorway and bold design. <text-link link="https://orkide.world">Check it out!</text-link>
     </p>
-
   </div>
 </template>
