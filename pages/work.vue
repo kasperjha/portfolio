@@ -11,6 +11,7 @@
         v-for="project in projects"
         :key="project.title"
         :project="project"
+        :selected="selectedProject !== null && project.title == selectedProject.title"
         @click="selectProject(project)"
       />
     </div>
