@@ -16,10 +16,18 @@
       />
     </div>
 
-    <ProjectDetails
-      v-if="selectedProject !== null"
-      :project="selectedProject"
-    />
+    <Transition
+      enterActiveClass="transform transition ease-out"
+      leaveActiveClass="transform transition ease-in"
+      enterFromClass="translate-y-[100%]"
+      leaveToClass="translate-y-[100%]"
+    >
+      <ProjectDetails
+        v-if="selectedProject !== null"
+        :key="selectedProject.title"
+        :project="selectedProject"
+      />
+    </Transition>
   </div>
 </template>
 
