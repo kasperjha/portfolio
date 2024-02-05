@@ -1,33 +1,49 @@
 <template>
-    <div class="max-w-lg space-y-5">
-        <p>
-            Here is a selection of website projects designed and developed by me.
-        </p>
+  <div class="mt-6 space-y-6">
+    <p>
+      These projects have been designed and developed by
+      me. Interact with one of them to discover more about
+      the project.
+    </p>
 
-        <div class="flex flex-col items-start gap-3 py-5 ml-5 text-3xl">
-            <BrandGradient class="transition ease-in-out duration-300 hover:translate-x-4 flex">
-                <a href="https://orkide.world">orkide.world</a>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mt-1 ml-1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                </svg>
-            </BrandGradient>
-            <BrandGradient class="transition ease-in-out duration-300 hover:translate-x-4 flex">
-                <a href="https://delivery-data.pages.dev">delivery-data</a>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mt-1 ml-1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                </svg>
-            </BrandGradient>
-        </div>
-
-        <p>
-            <TextLink link="/contact">Send me an email</TextLink> if you're curious about anything.
-        </p>
+    <div class="space-y-4">
+      <ProjectCard
+        v-for="project in projects"
+        :key="project.title"
+        :project="project"
+        @click="selectProject(project)"
+      />
     </div>
+
+    <ProjectDetails
+      v-if="selectedProject !== null"
+      :project="selectedProject"
+    />
+  </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { Project } from '../types/Projects';
+import { projects } from '../data/projects'
+
 useHead({
-    title: 'kakka.dev - work',
-    meta: [{ name: 'description', content: 'Completed client work by Kasper JHA. Latest project is portfolio site for Orkidé (orkide.world).'}]
+  title: 'kakka.dev - work',
+  meta: [{ name: 'description', content: 'Completed client work by Kasper JHA. Latest project is portfolio site for Orkidé (orkide.world).'}]
 });
+
+const selectedProject = ref(null)
+function selectProject(project: Project) {
+  if (project === null) {
+    return
+  }
+  if (selectedProject.value == null) {
+    selectedProject.value = project
+    return
+  }
+  if (selectedProject.value.title === project.title) {
+    selectedProject.value = null
+    return
+  }
+  selectedProject.value = project
+}
 </script>
