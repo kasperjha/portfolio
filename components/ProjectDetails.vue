@@ -3,9 +3,14 @@
   <div class="fixed left-0 bottom-0 w-full flex justify-center">
     <div class="w-full max-w-lg border border-gray-800 bg-white p-6 pt-8 pb-4 text-base">
 
-      <h2 class="text-2xl font-bold">
-        {{ project.title }}
-      </h2>
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">
+          {{ project.title }}
+        </h2>
+        <button @click="$emit('close')" class="h-6 w-6">
+          <XMarkIcon/>
+        </button>
+      </div>
 
       <p class="pt-4">
         {{ project.short_description }}
@@ -28,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import { XMarkIcon } from '@heroicons/vue/24/solid'
 import { Project } from '../types/Projects';
 defineProps<{ project: Project }>();
 </script>

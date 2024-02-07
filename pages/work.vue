@@ -27,6 +27,7 @@
         v-if="selectedProject !== null"
         :key="selectedProject.title"
         :project="selectedProject"
+        @close="selectedProject = null"
       />
     </Transition>
   </div>
