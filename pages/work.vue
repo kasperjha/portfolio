@@ -17,10 +17,11 @@
     </div>
 
     <Transition
-      enterActiveClass="transform transition ease-out"
-      leaveActiveClass="transform transition ease-in"
-      enterFromClass="translate-y-[100%]"
+      enterActiveClass="transform transition ease-out transform-gpu duration-150"
+      leaveActiveClass="transform transition ease-in transform-gpu duration-75"
+      enterFromClass="translate-y-[100%] "
       leaveToClass="translate-y-[100%]"
+      mode="out-in"
     >
       <ProjectDetails
         v-if="selectedProject !== null"
