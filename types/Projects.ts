@@ -3,5 +3,6 @@ export interface Project {
   short_description: string,
   visit_url?: string,
   github_url?: string,
+  demo_url?: string,
   project_palette: 'sapling' | 'blue' | 'eyez' | 'toxic'
 }

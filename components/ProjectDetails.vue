@@ -23,11 +23,19 @@
         </button>
       </NuxtLink>
 
+      <NuxtLink v-if="project.demo_url" :to="project.demo_url" class="block pt-2">
+        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
+          Visit Demo
+        </button>
+      </NuxtLink>
+
       <NuxtLink v-if="project.github_url" :to="project.github_url" class="block pt-2">
         <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
           View on GitHub
         </button>
       </NuxtLink>
+
+
     </div>
   </div>
 </template>
