@@ -7,7 +7,7 @@
         <h2 class="text-2xl font-bold">
           {{ project.title }}
         </h2>
-        <button @click="$emit('close')" class="h-6 w-6">
+        <button @click="$emit('close')" class="h-6 w-6 p-2 box-content hover:bg-blue-100 transition">
           <XMarkIcon/>
         </button>
       </div>
@@ -18,13 +18,13 @@
 
       <!-- TODO: extract button component -->
       <NuxtLink v-if="project.visit_url" :to="project.visit_url" class="block pt-6">
-        <button class="w-full border border-gray-800 py-2">
+        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
           Visit Website
         </button>
       </NuxtLink>
 
       <NuxtLink v-if="project.github_url" :to="project.github_url" class="block pt-2">
-        <button class="w-full border border-gray-800 py-2">
+        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
           View on GitHub
         </button>
       </NuxtLink>
