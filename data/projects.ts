@@ -16,5 +16,10 @@ export const projects: Project[] = [
     short_description: 'POC for a web application that enables tracking of package wear, deliverer performance and technical statistics from sensors. Team project for a CS course at RuG in the Netherlands.',
     github_url: 'https://github.com/kakka0903/delivery-data',
     visit_url: 'https://delivery-data.pages.dev/'
+  },
+  {
+    title: 'kakka.dev',
+    short_description: 'This website. Personal portfolio for web development projects. Built with Nuxt, Vue and Tailwind.',
+    github_url: 'https://github.com/kakka0903/kakka.dev',
   }
 ]
