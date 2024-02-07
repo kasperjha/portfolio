@@ -2,6 +2,12 @@ import { Project } from "../types/Projects";
 
 export const projects: Project[] = [
   {
+    title: 'ZvanzMP3 V1',
+    short_description: 'A website selling digial music licences for the work of ZvanzMP3.',
+    visit_url: 'https://zvanzflask.kakk.dev',
+    github_url: 'https://github.com/kakka0903/zvanzflask'
+  },
+  {
     title: 'ZvanzMP3 V2',
     short_description: 'Second iteration of a website promoting and selling the work of ZvanzMP3. Built with Vue, Flask and Tailwind.',
     visit_url: 'https://zvanz-frontend.pages.dev'
