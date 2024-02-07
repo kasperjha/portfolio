@@ -17,15 +17,21 @@
     </div>
 
     <Transition
-      enterActiveClass="transform transition ease-out"
-      leaveActiveClass="transform transition ease-in"
-      enterFromClass="translate-y-[100%]"
-      leaveToClass="translate-y-[100%]"
+      enterActiveClass="ease-out duration-200"
+      leaveActiveClass="ease-in duration-100"
+      enterFromClass=" translate-y-52 "
+      enterToClass="translate-y-0"
+      leaveFromClass="translate-y-0"
+      leaveToClass="translate-y-52"
+      mode="out-in"
     >
       <ProjectDetails
+        style="will-change: transform;"
+        class="transform transition-transform transform-gpu"
         v-if="selectedProject !== null"
         :key="selectedProject.title"
         :project="selectedProject"
+        @close="selectedProject = null"
       />
     </Transition>
   </div>
