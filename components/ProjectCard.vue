@@ -1,7 +1,7 @@
 <template>
   <div
-    class="cursor-pointer min-h-[75px] border bg-white border-gray-800 hover:bg-blue-100 flex items-center p-4 gap-6 transition"
-    :class="{ 'border-blue-800 bg-blue-100': selected }"
+    class="cursor-pointer min-h-[75px] border hover:bg-blue-100 flex items-center p-4 gap-6 transition"
+    :class="{ 'bg-white border-gray-800': !selected, 'border-blue-800 bg-blue-100': selected,  }"
   >
     <ProjectIcon :palette="project.project_palette">
       {{ project.title.slice(0, 2) }}
