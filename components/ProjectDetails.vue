@@ -17,7 +17,7 @@
       </p>
 
       <!-- TODO: extract button component -->
-      <NuxtLink v-if="project.visit_url" :to="project.visit_url" class="block pt-6">
+      <NuxtLink v-if="project.website_url" :to="project.website_url" class="block pt-6">
         <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
           Visit Website
         </button>

@@ -18,7 +18,7 @@ export const projects: Project[] = [
     title: 'orkide.world',
     short_description: "Portfolio website promoting the work of Orkidé Media. Built with Vue, Nuxt and Tailwind.",
     github_url: 'https://github.com/kakka0903/orkide-frontend',
-    visit_url: 'https://orkide.world',
+    website_url: 'https://orkide.world',
     project_palette: 'sapling'
   },
   {
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     title: 'kakka.dev',
     short_description: 'Personal portfolio website for demonstrating past web development projects. Built with Nuxt, Vue and Tailwind.',
     github_url: 'https://github.com/kakka0903/kakka.dev',
-    visit_url: 'https://github.com/kakka0903/kakka.dev',
+    website_url: 'https://github.com/kakka0903/kakka.dev',
     project_palette: 'blue'
   }
 ]
