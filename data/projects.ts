@@ -8,8 +8,7 @@ export const projects: Project[] = [
   },
   {
     title: 'orkide.world',
-    short_description: "A novel way of presenting music videos and album covers made by Orkidé Media. The application is built with Vue, Nuxt and Tailwind. It's integrated with selfhosted Strapi CMS and Plausible instances.",
-    github_url: 'https://github.com/kakka0903/orkide-frontend',
+    short_description: "A novel way of presenting music videos and album covers made by Orkidé Media. Built with Vue, Nuxt and Tailwind. Powered by self-hosted Strapi and Plausible instances.",
     visit_url: 'https://orkide.world'
   },
   {
