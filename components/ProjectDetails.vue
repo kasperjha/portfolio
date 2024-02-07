@@ -1,6 +1,6 @@
 <template>
-  <!-- TODO: extract bottom popover layout -->
   <div class="fixed left-0 bottom-0 w-full flex justify-center">
+    <!-- TODO: extract bottom popover layout -->
     <div class="w-full max-w-lg border border-gray-800 bg-white p-6 pt-8 pb-4 text-base">
 
       <div class="flex items-center justify-between">
