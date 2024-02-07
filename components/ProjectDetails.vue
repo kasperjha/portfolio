@@ -12,26 +12,26 @@
         </button>
       </div>
 
-      <p class="pt-4">
+      <p class="pt-4 pb-6">
         {{ project.short_description }}
       </p>
 
       <!-- TODO: extract button component -->
-      <NuxtLink v-if="project.website_url" :to="project.website_url" class="block pt-6">
-        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
-          Visit Website
+      <NuxtLink v-if="project.website_url" :to="project.website_url" class="block">
+        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition flex items-center gap-2 justify-center">
+          Visit Website <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
         </button>
       </NuxtLink>
 
       <NuxtLink v-if="project.demo_url" :to="project.demo_url" class="block pt-2">
-        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
-          Visit Demo
+        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition flex items-center gap-2 justify-center">
+          Visit Demo <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
         </button>
       </NuxtLink>
 
       <NuxtLink v-if="project.github_url" :to="project.github_url" class="block pt-2">
-        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition">
-          View on GitHub
+        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition flex items-center gap-2 justify-center">
+          View on GitHub <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
         </button>
       </NuxtLink>
 
@@ -42,6 +42,7 @@
 
 <script setup lang="ts">
 import { XMarkIcon } from '@heroicons/vue/24/solid'
+import { ArrowTopRightOnSquareIcon  } from '@heroicons/vue/16/solid'
 import { Project } from '../types/Projects';
 defineProps<{ project: Project }>();
 </script>
