@@ -32,7 +32,6 @@ export const projects: Project[] = [
     title: 'kakka.dev',
     short_description: 'Personal portfolio website for demonstrating past web development projects. Built with Nuxt, Vue and Tailwind.',
     github_url: 'https://github.com/kakka0903/kakka.dev',
-    website_url: 'https://github.com/kakka0903/kakka.dev',
     project_palette: 'blue'
   }
 ]
