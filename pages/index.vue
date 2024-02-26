@@ -1,10 +1,13 @@
 <template>
   <div class="space-y-10">
 
-    <h1 class="text-5xl leading-tight">
-      <span class="italic font-bold">Heyo!</span><br>
-      I'm Kasper
-    </h1>
+    <div class="flex gap-10 items-center">
+      <img src="/me.jpeg" alt="" class="min-w-40 w-40 h-40 rounded-full border-[5px]">
+      <div class="space-y-2">
+        <h1 class="text-2xl font-bold">kas·per</h1>
+        <p>“Welcome! I'm a freelance web developer and soon to be CS graduate” </p>
+      </div>
+    </div>
 
     <p class="max-w-lg">
       I am a freelance web developer and designer from Oslo.
