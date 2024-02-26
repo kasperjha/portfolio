@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-10">
+  <div>
 
     <div class="flex gap-10 items-center">
       <img src="/me.jpeg" alt="" class="min-w-40 w-40 h-40 rounded-full border-[5px]">
