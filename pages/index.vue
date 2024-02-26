@@ -9,13 +9,6 @@
       </div>
     </div>
 
-    <h2 class="font-bold mt-10">Availability</h2>
-
-    <p class="max-w-lg mt-2">
-      I'm looking for a fulltime freelance project starting September 2024.
-      Do you have a project for me? Reach out!
-    </p>
-
     <div class="flex gap-3 mt-8 justify-around text-3xl">
       <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
         <BrandGradient>
@@ -28,6 +21,13 @@
         </BrandGradient>
       </div>
     </div>
+
+    <h2 class="font-bold mt-10">Availability</h2>
+
+    <p class="max-w-lg mt-2">
+      I'm looking for a fulltime freelance project starting September 2024.
+      Do you have a project for me? Reach out!
+    </p>
 
     <h2 class="font-bold mt-10">Recent Work</h2>
 
