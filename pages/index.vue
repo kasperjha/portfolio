@@ -16,13 +16,17 @@
     </p>
 
 
-    <div class="flex flex-col gap-3 items-end text-3xl">
-      <BrandGradient class="transition ease-in-out duration-300 hover:-translate-x-4">
-        <NuxtLink to="/contact">CONTACT</NuxtLink>
-      </BrandGradient>
-      <BrandGradient class="transition ease-in-out duration-300 hover:-translate-x-4">
-        <NuxtLink to="/work">WORK</NuxtLink>
-      </BrandGradient>
+    <div class="flex gap-3 mt-8 justify-around text-3xl">
+      <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
+        <BrandGradient>
+          <NuxtLink to="/contact">CONTACT</NuxtLink>
+        </BrandGradient>
+      </div>
+      <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
+        <BrandGradient>
+          <NuxtLink to="/work">WORK</NuxtLink>
+        </BrandGradient>
+      </div>
     </div>
 
     <p class="max-w-lg">
