@@ -9,12 +9,12 @@
       </div>
     </div>
 
-    <p class="max-w-lg">
-      I am a freelance web developer and designer from Oslo.
-      Currently I study Computing Science at Rijksuniversiteit Groningen,
-      and make websites in my spare time.
-    </p>
+    <h2 class="font-bold mt-10">Availability</h2>
 
+    <p class="max-w-lg mt-2">
+      I'm looking for a fulltime freelance project starting September 2024.
+      Do you have a project for me? Reach out!
+    </p>
 
     <div class="flex gap-3 mt-8 justify-around text-3xl">
       <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
@@ -29,10 +29,16 @@
       </div>
     </div>
 
-    <p class="max-w-lg">
-      Most recently I built a portfolio for Orkidé.
-      He is a music video producer for rap groups in Oslo.
-      The website has a untraditional colorway and bold design. <text-link link="https://orkide.world">Check it out!</text-link>
+    <h2 class="font-bold mt-10">Recent Work</h2>
+
+    <p class="max-w-lg mt-2">
+      Recently I extended Orkidé's digital portfolio.
+      I added a folder archive, darkmode and improved
+      the overall user experience.
+    </p>
+
+    <p class="mt-2">
+      <text-link link="https://orkide.world">Check it out!</text-link>
     </p>
   </div>
 </template>
