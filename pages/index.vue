@@ -25,8 +25,8 @@
     <h2 class="font-bold mt-10">Availability</h2>
 
     <p class="max-w-lg mt-2">
-      I'm looking for a fulltime freelance project starting September 2024.
-      Do you have a project for me? Reach out!
+      I'm open to work fulltime on a freelance project from September 2024.
+      Do you have a something for me? <text-link link="/contact">Reach out!</text-link>
     </p>
 
     <h2 class="font-bold mt-10">Recent Work</h2>
