@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="hero" class="flex gap-5 sm:gap-10 items-center pt-5" >
+    <div id="hero" class="flex gap-5 sm:gap-10 items-center" >
       <img src="/me.jpeg" alt="" class="min-w-32 w-32 h-32 sm:min-w-40 sm:h-40 sm:w-40  rounded-full border-[5px]">
       <div class="space-y-2">
         <h1 class="text-xl sm:text-2xl font-bold">kas·per</h1>

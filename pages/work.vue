@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6 space-y-6 mb-48 ">
+  <div class="space-y-6 mb-48 ">
     <p>
       These websites have been designed and developed by
       me. Interact with one of them to discover more about

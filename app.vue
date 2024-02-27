@@ -9,7 +9,7 @@
                     <NavItem destination="https://plausible.kakk.dev/kakka.dev" name="stats" external/>
                 </div>
             </nav>
-            <main class="flex-grow py-5">
+            <main class="flex-grow pt-10 pb-20">
                 <NuxtPage />
             </main>
             <footer class="flex justify-center py-4 text-xs italic text-gray-700">
