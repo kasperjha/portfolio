@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <div class="flex gap-5 sm:gap-10 items-center">
+    <div id="hero" class="flex gap-5 sm:gap-10 items-center pt-5" >
       <img src="/me.jpeg" alt="" class="min-w-32 w-32 h-32 sm:min-w-40 sm:h-40 sm:w-40  rounded-full border-[5px]">
       <div class="space-y-2">
         <h1 class="text-xl sm:text-2xl font-bold">kas·per</h1>
@@ -9,7 +8,7 @@
       </div>
     </div>
 
-    <div class="flex gap-3 mt-8 justify-around text-3xl">
+    <div class="flex gap-3 mt-8 justify-around text-3xl" id="cta-links">
       <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
         <BrandGradient>
           <NuxtLink to="/contact">CONTACT</NuxtLink>
@@ -22,23 +21,55 @@
       </div>
     </div>
 
-    <h2 class="font-bold mt-10">Availability</h2>
+    <section id="availability">
+      <h2 class="font-bold mt-20">Availability</h2>
 
-    <p class="max-w-lg mt-2">
-      I'm open to work fulltime on a freelance project from September 2024.
-      Do you have a something for me? <text-link link="/contact">Reach out!</text-link>
-    </p>
+      <p class="max-w-lg mt-2">
+        I'm open to work fulltime on a freelance project from September 2024.
+        Do you have a something for me? <text-link link="/contact">Reach out!</text-link>
+      </p>
+    </section>
 
-    <h2 class="font-bold mt-10">Recent Work</h2>
+    <section id="recent-work">
+      <h2 class="font-bold mt-10">Recent Work</h2>
 
-    <p class="max-w-lg mt-2">
-      Recently I extended Orkidé's digital portfolio.
-      I added a folder archive, darkmode and improved
-      the overall user experience.
-    </p>
+      <p class="max-w-lg mt-2">
+        Recently I extended Orkidé's digital portfolio.
+        I added a folder archive, darkmode and improved
+        the overall user experience.
+      </p>
 
-    <p class="mt-2">
-      <text-link link="https://orkide.world">Check it out!</text-link>
-    </p>
+      <p class="mt-2">
+        <text-link link="https://orkide.world">Check it out!</text-link>
+      </p>
+    </section>
   </div>
 </template>
+
+<style scoped>
+@keyframes wait {
+    from { opacity: 0; }
+    to { opacity: 0; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+#hero {
+  animation: 150ms ease-out 0s 1 wait, 300ms ease-out 150ms 1 slideInFromLeft;
+}
+
+#cta-links {
+  animation: 300ms ease-out 0s 1 wait, 300ms ease-out 300ms 1 slideInFromLeft;
+}
+
+#availability {
+  animation: 450ms ease-out 0s 1 wait, 300ms ease-out 450ms 1 slideInFromLeft;
+}
+
+#recent-work {
+  animation: 600ms ease-out 0s 1 wait, 300ms ease-out 600ms 1 slideInFromLeft;
+}
+</style>
