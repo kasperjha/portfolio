@@ -45,31 +45,3 @@
     </section>
   </div>
 </template>
-
-<style scoped>
-@keyframes wait {
-    from { opacity: 0; }
-    to { opacity: 0; }
-}
-
-@keyframes slideInFromLeft {
-  from { transform: translateX(-20px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-#hero {
-  animation: 150ms ease-out 0s 1 wait, 300ms ease-out 150ms 1 slideInFromLeft;
-}
-
-#cta-links {
-  animation: 300ms ease-out 0s 1 wait, 300ms ease-out 300ms 1 slideInFromLeft;
-}
-
-#availability {
-  animation: 450ms ease-out 0s 1 wait, 300ms ease-out 450ms 1 slideInFromLeft;
-}
-
-#recent-work {
-  animation: 600ms ease-out 0s 1 wait, 300ms ease-out 600ms 1 slideInFromLeft;
-}
-</style>
