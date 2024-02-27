@@ -12,13 +12,13 @@
     <div class="flex gap-3 mt-8 justify-around text-2xl" id="cta-links">
       <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
         <BrandGradient>
-          <NuxtLink to="/contact">CONTACT</NuxtLink>
+          <NuxtLink to="/contact/">CONTACT</NuxtLink>
         </BrandGradient>
       </div>
 
       <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
         <BrandGradient>
-          <NuxtLink to="/work">WORK</NuxtLink>
+          <NuxtLink to="/work/">WORK</NuxtLink>
         </BrandGradient>
       </div>
 

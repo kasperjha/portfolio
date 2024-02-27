@@ -4,8 +4,8 @@
             <nav class="mt-6 mb-4">
                 <div class="flex gap-x-4">
                     <NavItem destination="/" name="kakka.dev" class="font-bold mr-auto"/>
-                    <NavItem destination="/contact" name="contact" />
-                    <NavItem destination="/work" name="work" />
+                    <NavItem destination="/contact/" name="contact" />
+                    <NavItem destination="/work/" name="work" />
                     <NavItem destination="https://plausible.kakk.dev/kakka.dev" name="stats" external/>
                 </div>
             </nav>
