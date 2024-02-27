@@ -1,5 +1,8 @@
 <template>
   <div class="space-y-6 mb-48 ">
+
+    <h1 class="text-3xl font-bold py-2">Work</h1>
+
     <p>
       These websites have been designed and developed by
       me. Interact with one of them to discover more about

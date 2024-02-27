@@ -1,5 +1,8 @@
 <template>
     <div class="max-w-lg space-y-5">
+
+        <h1 class="text-3xl font-bold py-2">Contact</h1>
+
         <p>
             Follow me here for the occasional webdev related post:
         </p>
