@@ -9,10 +9,15 @@
       </div>
     </div>
 
-    <div class="flex gap-3 mt-8 justify-around text-3xl" id="cta-links">
+    <div class="flex gap-3 mt-8 justify-around text-2xl" id="cta-links">
       <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
         <BrandGradient>
           <NuxtLink to="/contact">CONTACT</NuxtLink>
+        </BrandGradient>
+      </div>
+      <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
+        <BrandGradient>
+          <NuxtLink to="https://instagram.com/kasperkode">IG</NuxtLink>
         </BrandGradient>
       </div>
       <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
@@ -38,11 +43,9 @@
         Recently I extended Orkidé's digital portfolio.
         I added a folder archive, darkmode and improved
         the overall user experience.
-      </p>
-
-      <p class="mt-2">
         <text-link link="https://orkide.world">Check it out!</text-link>
       </p>
+
     </section>
   </div>
 </template>
