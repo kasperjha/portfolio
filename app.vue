@@ -1,6 +1,6 @@
 <template>
     <div class="flex w-full justify-center bg-gray-100">
-        <section class="max-w-xl w-full flex flex-col min-h-screen px-4 sm:px-8 leading-relaxed font-mono text-gray-900 text-base sm:text-lg  break-words">
+        <section class="max-w-xl w-full flex flex-col min-h-screen px-4 sm:px-8 leading-relaxed font-mono text-gray-900 text-lg  break-words">
             <nav class="mt-6 mb-4">
                 <div class="flex gap-x-4">
                     <NavItem destination="/" name="kakka.dev" class="font-bold mr-auto"/>
