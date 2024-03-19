@@ -1,5 +1,12 @@
 <template>
   <div>
+
+    <NuxtLink to="/now">
+      <latest class="mb-14">
+        Pitched Local Bloom for Innovasjon Norge
+      </latest>
+    </NuxtLink>
+
     <div class="flex flex-col items-center text-center gap-5">
       <img src="/me.jpeg" alt="" class="min-w-40 h-40 w-40 rounded-full border-[5px]">
       <div class="space-y-4 max-w-sm">
@@ -49,7 +56,7 @@
         Follow me on social media to stay up to
         date on what I'm currently working on.
       </p>
-      <div class="mt-5 flex col justify-center gap-5">
+      <div class="mt-8 flex col justify-center gap-8">
         <NuxtLink to="https://instagram.com/kasperkode">
           <BaseCard>
             <IconInstagram class="w-12 h-12 text-purple-600"/>

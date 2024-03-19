@@ -6,9 +6,10 @@
             <nav class="mt-6 mb-4">
                 <div class="flex gap-x-4">
                     <NavItem destination="/" name="kakka.dev" class="font-bold mr-auto"/>
-                    <NavItem destination="/contact/" name="contact" />
+                    <NavItem destination="/now/" name="now" />
                     <NavItem destination="/work/" name="work" />
-                    <NavItem destination="https://plausible.kakk.dev/kakka.dev" name="stats" external/>
+                    <NavItem destination="/contact/" name="contact" />
+                    <NavItem destination="https://plausible.kakk.dev/kakka.dev" name="stats" external class="hidden sm:block"/>
                 </div>
             </nav>
             <main class="flex-grow pt-10 pb-20">
