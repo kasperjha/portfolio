@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="font-bold text-2xl">What's happening now?</h1>
+    <h1 class="font-bold text-2xl">What's up?</h1>
     <p class="mt-2">
       On this page I share what i've been focusing on recently
       (<a href="https://nownownow.com/about" class="text-blue-600 underline">now page</a>).
