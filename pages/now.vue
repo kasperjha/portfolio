@@ -17,8 +17,8 @@
 useSeoMeta({
   title: 'kakka.dev - now',
   ogTitle: 'kakka.dev - now',
-  description: 'Read about what I\'ve been focusing on something.',
-  ogDescription: 'Read about what I\'ve been focusing on something.',
+  description: 'Read about what I\'ve been my focus lately.',
+  ogDescription: 'Read about what I\'ve been my focus lately.',
   ogImage: '/me.jpeg'
 })
 </script>
