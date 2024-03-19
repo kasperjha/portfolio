@@ -52,6 +52,31 @@
         <text-link link="https://orkide.world">Check it out!</text-link>
       </p>
 
+    <section class="flex flex-col items-center mt-20">
+      <h2 class="text-xl font-bold text-center">
+        Wanna stay in touch?
+      </h2>
+      <p class="text-center max-w-sm mt-2">
+        Follow me on social media to stay up to
+        date on what I'm currently working on.
+      </p>
+      <div class="mt-5 flex col justify-center gap-5">
+        <NuxtLink to="https://instagram.com/kasperkode">
+          <BaseCard>
+            <IconInstagram class="w-12 h-12 text-purple-600"/>
+          </BaseCard>
+        </NuxtLink>
+        <NuxtLink to="https://pinterest.com/kasperjha">
+          <BaseCard>
+            <IconPinterest class="w-12 h-12 text-purple-600"/>
+          </BaseCard>
+        </NuxtLink>
+        <NuxtLink to="https://x.com/kasperjha">
+          <BaseCard>
+            <IconX class="w-12 h-12 text-purple-600"/>
+          </BaseCard>
+        </NuxtLink>
+      </div>
     </section>
   </div>
 </template>
