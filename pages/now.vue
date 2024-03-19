@@ -12,3 +12,13 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'kakka.dev - now',
+  ogTitle: 'kakka.dev - now',
+  description: 'Read about what I\'ve been focusing on something.',
+  ogDescription: 'Read about what I\'ve been focusing on something.',
+  ogImage: '/me.jpeg'
+})
+</script>

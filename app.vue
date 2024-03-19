@@ -52,7 +52,6 @@ body {
 
 <script setup>
 useHead({
-    title:'kakka.dev',
     script:[
         { defer:'defer', src:'https://plausible.kakk.dev/js/plausible.js', 'data-domain':'kakka.dev'}
     ],
@@ -60,5 +59,13 @@ useHead({
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
     ],
     meta: [{ name: 'description', content: 'Heyo! I\'m Kasper. Check out my portfolio: During daytime i study for a CompSci degree, and on the side i enjoy building ool websites for cool people.' }]
+})
+
+useSeoMeta({
+  title: 'kakka.dev',
+  ogTitle: 'kakka.dev',
+  description: 'Hi there! I\'m a freelance software developer and web designer and soon to be Computer Science graduate. Check out my projects, freelance availability and whats been my focus recently',
+  ogDescription: 'Hi there! I\'m a freelance software developer and web designer and soon to be Computer Science graduate.',
+  ogImage: '/me.jpeg'
 })
 </script>
