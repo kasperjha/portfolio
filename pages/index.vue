@@ -39,6 +39,7 @@
         the overall user experience.
         <text-link link="https://orkide.world">Check it out!</text-link>
       </p>
+    </section>
 
     <section class="flex flex-col items-center mt-20">
       <h2 class="text-xl font-bold text-center">
