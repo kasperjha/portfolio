@@ -1,6 +1,6 @@
 <template>
-    <div class="flex w-full justify-center bg-gray-100">
         <section class="max-w-xl w-full flex flex-col min-h-screen px-4 sm:px-8 leading-relaxed font-mono text-gray-900 text-lg  break-words">
+    <div class="flex w-full justify-center">
             <nav class="mt-6 mb-4">
                 <div class="flex gap-x-4">
                     <NavItem destination="/" name="kakka.dev" class="font-bold mr-auto"/>
@@ -33,6 +33,17 @@
   opacity: 0;
   filter: blur(5px);
   transform: translateY(5px);
+}
+
+body {
+  --dot-bg: white;
+  --dot-color: gray;
+  --dot-size: 1px;
+  --dot-space: 20px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
 }
 </style>
 
