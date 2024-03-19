@@ -1,37 +1,25 @@
 <template>
   <div>
-    <div class="flex flex-col items-center text-center sm:text-left sm:flex-row gap-5 sm:gap-10">
+    <div class="flex flex-col items-center text-center gap-5">
       <img src="/me.jpeg" alt="" class="min-w-40 h-40 w-40 rounded-full border-[5px]">
-
       <div class="space-y-4 max-w-sm">
-        <h1 class="text-3xl font-bold">kas·per</h1>
-        <p class="text-xl">Welcome! I'm a freelance web developer and soon to be CS graduate.</p>
+        <h1 class="text-2xl font-bold">kas·per</h1>
+        <p class="text-md">Hi there! I'm a freelance software developer and web designer and soon to be Computer Science graduate.</p>
+        <div class="space-x-4 pt-2 text-sm">
+          <NuxtLink to="/work">
+            <BaseButton>
+              See Projects
+            </BaseButton>
+          </NuxtLink>
+          <NuxtLink to="/contact">
+            <BaseButton variant="secondary">
+              Reach out!
+            </BaseButton>
+          </NuxtLink>
+        </div>
       </div>
     </div>
 
-    <div class="flex gap-3 mt-8 justify-around text-2xl" id="cta-links">
-      <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
-        <BrandGradient>
-          <NuxtLink to="/contact/">CONTACT</NuxtLink>
-        </BrandGradient>
-      </div>
-
-      <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
-        <BrandGradient>
-          <NuxtLink to="/work/">WORK</NuxtLink>
-        </BrandGradient>
-      </div>
-
-      <div class="transition p-5 ease-in-out duration-300 hover:scale-125">
-        <BrandGradient class="flex">
-          <a href="https://instagram.com/kasperkode">IG</a>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mt-1 ml-1">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-          </svg>
-        </BrandGradient>
-      </div>
-
-    </div>
 
     <section id="availability">
       <h2 class="font-bold mt-20">Availability</h2>
