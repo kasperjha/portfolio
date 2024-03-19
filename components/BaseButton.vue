@@ -1,6 +1,6 @@
 <template>
   <button
-    class="py-2 px-4 border-2 border-purple-600 rounded-md"
+    class="py-2 px-4 border rounded-md"
     :class="variantStyles"
   >
     <slot></slot>
@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<{variant: 'primary' | 'secondary'}>(), {
 });
 
 const variantStyles = computed(() => ({
-  'bg-purple-600 text-white hover:brightness-95': props.variant == 'primary',
-  'text-purple-600 bg-white hover:brightness-95': props.variant == 'secondary'
+  'bg-purple-600 text-white hover:brightness-95 border-purple-600': props.variant == 'primary',
+  'text-purple-600 bg-purple-100/50 border-purple-200 hover:brightness-95': props.variant == 'secondary'
 }))
 </script>
