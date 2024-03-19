@@ -11,7 +11,7 @@
       <img src="/me.jpeg" alt="" class="min-w-40 h-40 w-40 rounded-full border-[5px]">
       <div class="space-y-4 max-w-sm">
         <h1 class="text-2xl font-bold">kas·per</h1>
-        <p class="text-md">Hi there! I'm a freelance software developer and web designer and soon to be Computer Science graduate.</p>
+        <p class="text-md">Hi there! I'm a freelance software developer, web designer and soon to be Computer Science graduate.</p>
         <div class="space-x-4 pt-2 text-sm">
           <NuxtLink to="/work">
             <BaseButton>
@@ -59,17 +59,17 @@
       <div class="mt-8 flex col justify-center gap-8">
         <NuxtLink to="https://instagram.com/kasperkode">
           <BaseCard>
-            <IconInstagram class="w-12 h-12 text-purple-600"/>
+            <IconInstagram class="w-10 h-10 text-purple-600"/>
           </BaseCard>
         </NuxtLink>
         <NuxtLink to="https://pinterest.com/kasperjha">
           <BaseCard>
-            <IconPinterest class="w-12 h-12 text-purple-600"/>
+            <IconPinterest class="w-10 h-10 text-purple-600"/>
           </BaseCard>
         </NuxtLink>
         <NuxtLink to="https://x.com/kasperjha">
           <BaseCard>
-            <IconX class="w-12 h-12 text-purple-600"/>
+            <IconX class="w-10 h-10 text-purple-600"/>
           </BaseCard>
         </NuxtLink>
       </div>

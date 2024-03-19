@@ -64,8 +64,8 @@ useHead({
 useSeoMeta({
   title: 'kakka.dev',
   ogTitle: 'kakka.dev',
-  description: 'Hi there! I\'m a freelance software developer and web designer and soon to be Computer Science graduate. Check out my projects, freelance availability and whats been my focus recently',
-  ogDescription: 'Hi there! I\'m a freelance software developer and web designer and soon to be Computer Science graduate.',
+  description: 'I\'m a freelance software developer, web designer and soon to be Computer Science graduate. Check out my projects, freelance availability and whats been my focus recently',
+  ogDescription: 'I\'m a freelance software developer, web designer and soon to be Computer Science graduate.',
   ogImage: '/me.jpeg'
 })
 </script>
