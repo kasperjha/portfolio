@@ -11,6 +11,11 @@
         </button>
       </div>
 
+      <div class="flex flex-wrap mt-2 gap-1">
+        <span v-for="technology in project.technologies" class="text-xs bg-blue-100/40 border border-blue-200 py-1 px-2 rounded-full text-blue-600 flex items-center">
+          {{ technology }}
+        </span>
+      </div>
 
       <p class="mt-6 text-gray-600 leading-relaxed">
         {{ project.short_description }}
