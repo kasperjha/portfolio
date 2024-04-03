@@ -21,7 +21,7 @@
         {{ project.short_description }}
       </p>
 
-      <div class="mt-10">
+      <div class="mt-10 text-sm">
         <NuxtLink v-if="project.website_url" :to="project.website_url" class="block">
           <BaseButton class="w-full" variant="primary">
             Visit Website <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
