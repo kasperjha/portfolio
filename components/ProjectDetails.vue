@@ -1,10 +1,9 @@
 <template>
-  <div class="fixed left-0 bottom-0 w-full flex justify-center">
+  <div class="fixed left-0 bottom-0 w-full flex justify-center pointer-events-none">
     <!-- TODO: extract bottom popover layout -->
-    <div class="w-full max-w-lg border border-gray-800 bg-white p-6 pt-8 pb-4 text-base">
-
+    <div class="w-full max-w-lg border border-gray-200 rounded-lg bg-white/80 backdrop-blur-xl p-6 pt-6 pb-4 text-base pointer-events-auto">
       <div class="flex items-center justify-between">
-        <h2 class="text-2xl font-bold">
+        <h2 class="text-2xl font-medium text-gray-800">
           {{ project.title }}
         </h2>
         <button @click="$emit('close')" class="h-6 w-6 p-2 box-content hover:bg-blue-100 transition">
@@ -12,27 +11,30 @@
         </button>
       </div>
 
-      <p class="pt-4 pb-6">
+
+      <p class="mt-6 text-gray-600 leading-relaxed">
         {{ project.short_description }}
       </p>
 
-      <NuxtLink v-if="project.website_url" :to="project.website_url" class="block">
-        <BaseButton class="w-full">
-          Visit Website <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
-        </BaseButton>
-      </NuxtLink>
+      <div class="mt-10">
+        <NuxtLink v-if="project.website_url" :to="project.website_url" class="block">
+          <BaseButton class="w-full" variant="primary">
+            Visit Website <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
+          </BaseButton>
+        </NuxtLink>
 
-      <NuxtLink v-if="project.demo_url" :to="project.demo_url" class="block pt-2">
-        <BaseButton class="w-full">
-          Visit Demo <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
-        </BaseButton>
-      </NuxtLink>
+        <NuxtLink v-if="project.demo_url" :to="project.demo_url" class="block pt-2">
+          <BaseButton class="w-full" variant="primary">
+            Visit Demo <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
+          </BaseButton>
+        </NuxtLink>
 
-      <NuxtLink v-if="project.github_url" :to="project.github_url" class="block pt-2">
-        <BaseButton class="w-full" variant="secondary">
-          View on GitHub <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
-        </BaseButton>
-      </NuxtLink>
+        <NuxtLink v-if="project.github_url" :to="project.github_url" class="block pt-2">
+          <BaseButton class="w-full" variant="secondary">
+            View on GitHub <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
+          </BaseButton>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
