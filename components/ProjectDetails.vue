@@ -6,7 +6,7 @@
         <h2 class="text-2xl font-medium text-gray-800">
           {{ project.title }}
         </h2>
-        <button @click="$emit('close')" class="h-6 w-6 p-2 box-content hover:bg-blue-100 transition">
+        <button @click="$emit('close')" class="h-6 w-6 p-1 box-content rounded-sm hover:bg-purple-200/50 transition">
           <XMarkIcon/>
         </button>
       </div>
