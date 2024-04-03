@@ -7,6 +7,10 @@
       Last updated on 19.03.24.
     </p>
     <div class="grid grid-cols-3 gap-x-2 gap-y-5 mt-10">
+      <p class="text-purple-800">01.04.24</p>
+      <p class="col-span-2">Preparing for Operating Systems and Computer Graphics exams.</p>
+    </div>
+    <div class="grid grid-cols-3 gap-x-2 gap-y-5 mt-10">
       <p class="text-purple-800">19.03.24</p>
       <p class="col-span-2">Pitched Local Bloom for Innovasjon Norge</p>
     </div>

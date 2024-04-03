@@ -3,7 +3,7 @@
 
     <NuxtLink to="/now">
       <latest class="mb-14">
-        Pitched Local Bloom for Innovasjon Norge
+        Preparing for OS and CG exams
       </latest>
     </NuxtLink>
 
