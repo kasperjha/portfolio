@@ -1,7 +1,7 @@
 <template>
   <div class="fixed left-0 bottom-0 w-full flex justify-center pointer-events-none">
     <!-- TODO: extract bottom popover layout -->
-    <div class="w-full max-w-lg border border-gray-200 rounded-lg bg-white/80 backdrop-blur-xl p-6 pt-6 pb-4 text-base pointer-events-auto">
+    <div class="w-full max-w-lg border shadow-xl border-gray-200 rounded-t-lg bg-white/80 backdrop-blur-xl p-6 pt-6 pb-4 text-base pointer-events-auto">
       <div class="flex items-center justify-between">
         <h2 class="text-2xl font-medium text-gray-800">
           {{ project.title }}
