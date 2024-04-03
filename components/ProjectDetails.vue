@@ -16,26 +16,23 @@
         {{ project.short_description }}
       </p>
 
-      <!-- TODO: extract button component -->
       <NuxtLink v-if="project.website_url" :to="project.website_url" class="block">
-        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition flex items-center gap-2 justify-center">
+        <BaseButton class="w-full">
           Visit Website <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
-        </button>
+        </BaseButton>
       </NuxtLink>
 
       <NuxtLink v-if="project.demo_url" :to="project.demo_url" class="block pt-2">
-        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition flex items-center gap-2 justify-center">
+        <BaseButton class="w-full">
           Visit Demo <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
-        </button>
+        </BaseButton>
       </NuxtLink>
 
       <NuxtLink v-if="project.github_url" :to="project.github_url" class="block pt-2">
-        <button class="w-full border border-gray-800 py-2 hover:bg-blue-100 transition flex items-center gap-2 justify-center">
+        <BaseButton class="w-full" variant="secondary">
           View on GitHub <ArrowTopRightOnSquareIcon class="w-4 h-4 inline"/>
-        </button>
+        </BaseButton>
       </NuxtLink>
-
-
     </div>
   </div>
 </template>
