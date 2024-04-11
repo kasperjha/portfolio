@@ -3,7 +3,7 @@
 
     <NuxtLink to="/now">
       <latest class="mb-14">
-        Preparing for OS and CG exams
+        Looking for jobs in the industry 👀
       </latest>
     </NuxtLink>
 
