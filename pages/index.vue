@@ -27,26 +27,23 @@
       </div>
     </div>
 
+    <h2 class="text-xl font-bold mt-16">About Me</h2>
 
-    <section id="availability">
-      <h2 class="font-bold mt-20">Availability</h2>
+    <p class="mt-2">
+      I'm a passionate developer, with an eye for design, great academic merits and industry experience from both large and small companies. (<NuxtLink to="https://www.linkedin.com/in/kasper-alfarnes-a3b97b25b/">see LinkedIn!</NuxtLink>)
+    </p>
 
-      <p class="max-w-lg mt-2">
-        I'm open to work fulltime on a freelance project from September 2024.
-        Do you have a something for me? <text-link link="/contact">Reach out!</text-link>
-      </p>
-    </section>
+    <h2 class="text-xl font-bold mt-16">My Services</h2>
 
-    <section id="recent-work">
-      <h2 class="font-bold mt-10">Recent Work</h2>
+    <p class="mt-2">
+      As a freelancer, I offer web development and brand identity services. I especially enjoy creating highly-interactive and memorable digital experiences.
+    </p>
 
-      <p class="max-w-lg mt-2">
-        Recently I extended Orkidé's digital portfolio.
-        I added a folder archive, darkmode and improved
-        the overall user experience.
-        <text-link link="https://orkide.world">Check it out!</text-link>
-      </p>
-    </section>
+    <h2 class="text-xl font-bold mt-16">Recent Work</h2>
+
+    <p class="mt-2">
+      My most recently I updated the digital portfolio of a long standing client; <a href="https://instagram.com/orkide.world">video producer Orkidé</a>. For this project, I designed a dark theme, created a solutions for displaying album art and integrated a OSS CMS.
+    </p>
 
     <section class="flex flex-col items-center mt-20">
       <h2 class="text-xl font-bold text-center">
