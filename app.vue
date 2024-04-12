@@ -17,9 +17,9 @@
             </main>
             <footer class="flex justify-center py-4 text-xs italic text-gray-700">
                 <p>
-                    Developed with <text-link link="https://nuxtjs.org">Nuxt</text-link>,
-                    <text-link link="https://nuxtjs.org">Vue</text-link> and
-                    <text-link link="https://tailwindcss.com">Tailwind</text-link>. View <text-link link="https://github.com/kakka0903/kakka.dev">on GitHub</text-link>.
+                    Developed with <a href="https://nuxtjs.org">Nuxt</a>,
+                    <a href="https://nuxtjs.org">Vue</a> and
+                    <a href="https://tailwindcss.com">Tailwind</a>. View <a href="https://github.com/kakka0903/kakka.dev">on GitHub</a>.
                 </p>
             </footer>
         </section>
@@ -47,6 +47,15 @@ body {
 		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		var(--dot-color);
+}
+
+p a {
+  text-decoration: underline;
+  color: blue;
+}
+
+p a:hover {
+  color: red;
 }
 </style>
 

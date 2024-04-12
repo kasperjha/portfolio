@@ -31,7 +31,7 @@
         <p>
             Would you like to start a project together?
             Shoot me an email at:
-            <text-link link="mailto:kakka0903@hotmail.no">kakka0903@hotmail.no</text-link>
+            <a href="mailto:kakka0903@hotmail.no">kakka0903@hotmail.no</a>
         </p>
     </div>
 </template>
