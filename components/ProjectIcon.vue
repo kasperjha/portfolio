@@ -13,6 +13,7 @@ const allIconColours = {
   'blue': ['#FFFFFF', '#0000FF'],
   'eyez': ['#FFFFFF', '#FF00FF'],
   'toxic': ['#82FF00', '#FF2B81'],
+  'earth': ['#E7D1B1', '#2E1C10'],
 }
 const iconColour = allIconColours[palette]
 const iconStyles = computed(() => ({

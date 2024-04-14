@@ -5,5 +5,5 @@ export interface Project {
   github_url?: string,
   demo_url?: string,
   technologies: string[],
-  project_palette: 'sapling' | 'blue' | 'eyez' | 'toxic'
+  project_palette: 'sapling' | 'blue' | 'eyez' | 'toxic' | 'earth'
 }

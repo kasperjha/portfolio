@@ -17,6 +17,13 @@ export const projects: Project[] = [
     technologies: ['vue', 'nuxt', 'strapi']
   },
   {
+    title: 'kennel-villa-solberg',
+    short_description: 'Traditional marketing website for Kennel Villa Solberg. The website was designed to instill trust in potential customers.',
+    website_url: 'https://kennelvillasolberg.no/',
+    project_palette: 'earth',
+    technologies: ['vue', 'nuxt', 'tailwind']
+  },
+  {
     title: 'delivery-data',
     short_description: 'POC for a web application for tracking package wear, deliverer performance and sensor data.',
     github_url: 'https://github.com/kakka0903/delivery-data',
