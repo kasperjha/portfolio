@@ -10,7 +10,7 @@ export const projects: Project[] = [
   },
   {
     title: 'orkide.world',
-    short_description: "Portfolio website promoting the work of Orkidé Media.",
+    short_description: "Digital portfolio for video producer Orkidé. The website features a unique design that encourages exploration of the clients work.",
     github_url: 'https://github.com/kakka0903/orkide-frontend',
     website_url: 'https://orkide.world',
     project_palette: 'sapling',
@@ -25,7 +25,7 @@ export const projects: Project[] = [
   },
   {
     title: 'delivery-data',
-    short_description: 'POC for a web application for tracking package wear, deliverer performance and sensor data.',
+    short_description: 'Proof of concept for a web application designed to track package wear, deliverer performance and hardware sensor metrics.',
     github_url: 'https://github.com/kakka0903/delivery-data',
     demo_url: 'https://delivery-data.pages.dev/',
     project_palette: 'blue',
