@@ -5,8 +5,8 @@
 
     <p>
       These websites have been designed and developed by
-      me. Interact with one of them to discover more about
-      the project.
+      me. You can read about the project or visit an online demo
+      by interacting with one of the cards below.
     </p>
 
     <div class="space-y-4">
@@ -44,9 +44,9 @@
 import { Project } from '../types/Projects';
 import { projects } from '../data/projects'
 
-useHead({
+useSeoMeta({
   title: 'kakka.dev - work',
-  meta: [{ name: 'description', content: 'Completed client work by Kasper JHA. Latest project is portfolio site for Orkidé (orkide.world).'}]
+  description: 'Websites built and designed by Kasper JH. Alfarnes. Check out live websites, online demos, github repos and see the project\'s tech stack.'
 });
 
 const selectedProject = ref(null)
