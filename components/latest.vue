@@ -1,11 +1,13 @@
 <template>
   <button class="group text-xs w-full bg-purple-100/40 hover:brightness-95 border border-purple-200 py-2 px-4 rounded-full text-purple-600 flex items-center">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 inline animate-pulse">
-      <path fill-rule="evenodd" d="M9.58 1.077a.75.75 0 0 1 .405.82L9.165 6h4.085a.75.75 0 0 1 .567 1.241l-6.5 7.5a.75.75 0 0 1-1.302-.638L6.835 10H2.75a.75.75 0 0 1-.567-1.241l6.5-7.5a.75.75 0 0 1 .897-.182Z" clip-rule="evenodd" />
-    </svg>
-    <span class="font-bold mr-4 ml-1 animate-pulse">latest</span>
+    <BoltIcon class="w-4 h-4 inline animate-pulse mr-2" />
     <p class="overflow-hidden truncate text-ellipsis">
-      <slot></slot>
+      {{ latest[0].content }}
     </p>
   </button>
 </template>
+
+<script setup lang="ts">
+import { BoltIcon } from '@heroicons/vue/16/solid';
+import { latest } from '~/data/latest';
+</script>
