@@ -2,9 +2,7 @@
   <div>
 
     <NuxtLink to="/now">
-      <latest class="mb-14">
-        Looking for jobs in the industry 👀
-      </latest>
+      <latest class="mb-14" />
     </NuxtLink>
 
     <div class="flex flex-col items-center text-center gap-5">
