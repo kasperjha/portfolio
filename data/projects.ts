@@ -2,6 +2,14 @@ import { Project } from "../types/Projects";
 
 export const projects: Project[] = [
   {
+    title: 'realtime-pointers',
+    short_description: 'Made to experiment with Server-Send Events (SSE) to visualise pointers in across devices in realtime.',
+    github_url: 'https://github.com/kakka0903/realtime-pointers',
+    demo_url: 'https://realtime-pointers.pages.dev',
+    project_palette: 'blue',
+    technologies: ['pocketbase','gsap']
+  },
+  {
     title: 'kakka.dev',
     short_description: 'Personal portfolio website for demonstrating past web development projects.',
     github_url: 'https://github.com/kakka0903/kakka.dev',
