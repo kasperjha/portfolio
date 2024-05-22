@@ -4,22 +4,22 @@ export const projects: Project[] = [
   {
     title: 'realtime-pointers',
     short_description: 'Made to experiment with Server-Send Events (SSE) to visualise pointers in across devices in realtime.',
-    github_url: 'https://github.com/kakka0903/realtime-pointers',
+    github_url: 'https://github.com/kasperjha/realtime-pointers',
     demo_url: 'https://realtime-pointers.pages.dev',
     project_palette: 'blue',
-    technologies: ['pocketbase','gsap']
+    technologies: ['pocketbase', 'gsap']
   },
   {
     title: 'kakka.dev',
     short_description: 'Personal portfolio website for demonstrating past web development projects.',
-    github_url: 'https://github.com/kakka0903/kakka.dev',
+    github_url: 'https://github.com/kasperjha/kakka.dev',
     project_palette: 'blue',
     technologies: ['vue', 'nuxt']
   },
   {
     title: 'orkide.world',
     short_description: "Digital portfolio for video producer Orkidé. The website features a unique design that encourages exploration of the clients work.",
-    github_url: 'https://github.com/kakka0903/orkide-frontend',
+    github_url: 'https://github.com/kasperjha/orkide-frontend',
     website_url: 'https://orkide.world',
     project_palette: 'sapling',
     technologies: ['vue', 'nuxt', 'strapi']
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     title: 'delivery-data',
     short_description: 'Proof of concept for a web application designed to track package wear, deliverer performance and hardware sensor metrics.',
-    github_url: 'https://github.com/kakka0903/delivery-data',
+    github_url: 'https://github.com/kasperjha/delivery-data',
     demo_url: 'https://delivery-data.pages.dev/',
     project_palette: 'blue',
     technologies: ['vue', 'nuxt', 'mapbox']
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     title: 'ZvanzMP3 V1',
     short_description: 'A website selling digial music licences for the work of ZvanzMP3.',
     demo_url: 'https://zvanzflask.kakk.dev',
-    github_url: 'https://github.com/kakka0903/zvanzflask',
+    github_url: 'https://github.com/kasperjha/zvanzflask',
     project_palette: 'eyez',
     technologies: ['flask', 'stripe'],
   },
