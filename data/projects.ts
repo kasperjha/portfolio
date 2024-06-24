@@ -2,6 +2,14 @@ import { Project } from "../types/Projects";
 
 export const projects: Project[] = [
   {
+    title: 'kalf.no',
+    short_description: 'Digital gallery and collaborative art project of single line drawings. Experimentation with SVG animation.',
+    website_url: 'https://kalf.no',
+    github_url: 'https://github.com/kasperjha/kalf.no',
+    technologies: ['vanilla javascript', 'tailwindcss'],
+    project_palette: 'blue'
+  },
+  {
     title: 'realtime-pointers',
     short_description: 'Made to experiment with Server-Send Events (SSE) to visualise pointers in across devices in realtime.',
     github_url: 'https://github.com/kasperjha/realtime-pointers',
