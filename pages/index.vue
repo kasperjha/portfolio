@@ -40,7 +40,8 @@
     <h2 class="text-xl font-bold mt-16">Recent Work</h2>
 
     <p class="mt-2">
-      My most recently I updated the digital portfolio of a long standing client; <a href="https://instagram.com/orkide.world">video producer Orkidé</a>. For this project, I designed a dark theme, created a solutions for displaying album art and integrated a OSS CMS.
+      Most recently I built <a href="https://kalf.no">kalf.no</a>
+      It's a fun little site with one line drawing made by friends.
     </p>
 
     <section class="flex flex-col items-center mt-20">
