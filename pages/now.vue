@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="font-bold text-3xl py-2">What's up?</h1>
+    <BasePageTitle>
+      What's up?
+    </BasePageTitle>
     <p class="mt-5">
       On this page I share what i've been focusing on recently
       (<a href="https://nownownow.com/about">now page</a>).
