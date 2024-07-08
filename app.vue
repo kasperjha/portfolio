@@ -9,6 +9,7 @@
           <NavItem destination="/" name="kakka.dev" class="font-bold mr-auto" />
           <NavItem destination="/now/" name="now" />
           <NavItem destination="/work/" name="work" />
+          <NavItem destination="/blog/" name="blog" />
           <NavItem destination="/contact/" name="contact" />
           <NavItem destination="https://plausible.kakk.dev/kakka.dev" name="stats" external class="hidden sm:block" />
         </div>
