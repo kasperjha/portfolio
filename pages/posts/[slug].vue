@@ -1,7 +1,7 @@
 <template>
   <div>
-    <BasePageTitle class="mb-5">{{ post.title }}</BasePageTitle>
-    <div class="flex gap-8 text-sm text-gray-600">
+    <BasePageTitle class="mb-3">{{ post.title }}</BasePageTitle>
+    <div class="flex gap-8 text-sm text-purple-600">
       <span>{{ post.published }}</span>
       <div class="flex gap-4 mb-10">
         <span v-for="tag in post.tags">#{{ tag }}</span>
@@ -11,10 +11,8 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import type { Post } from '~/types/Post';
-
+<script setup>
 const route = useRoute();
-const { data } = useAsyncData(() => queryContent('/posts/' + route.params.slug).findOne());
-const post: Post = data;
+const { data } = await useAsyncData(() => queryContent('/posts/' + route.params.slug).findOne());
+const post = data;
 </script>
