@@ -15,7 +15,7 @@
 
 <script setup>
 const route = useRoute();
-const { data } = await useAsyncData(() => queryContent('/posts/' + route.params.slug).findOne());
+const { data } = await useAsyncData(() => queryContent().where({ 'slug': route.params.slug }).findOne());
 const post = data;
 </script>
 
