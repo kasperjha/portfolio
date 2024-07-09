@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BasePageTitle class="mb-5">
+    <BasePageTitle class="mb-2">
       Blog
     </BasePageTitle>
 

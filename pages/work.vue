@@ -1,11 +1,11 @@
 <template>
-  <div class="space-y-6 mb-48 ">
+  <div class="mb-48">
 
-    <BasePageTitle>
+    <BasePageTitle class="mb-2">
       Work
     </BasePageTitle>
 
-    <p>
+    <p class="mb-8">
       These websites have been designed and developed by
       me. You can read about the project or visit an online demo
       by interacting with one of the cards below.
