@@ -1,5 +1,5 @@
 ---
-slug: "kalf-process"
+slug: "Learning-SVG-animation-with-baby-cows"
 title: "Learning SVG animation with baby cows"
 description: "I experiment with single line drawings of baby cows to populate a new domain and learn how to animate SVGs."
 published: "2024-07-08"
