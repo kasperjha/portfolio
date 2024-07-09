@@ -4,10 +4,9 @@ title: "Learning SVG animation with baby cows"
 description: "I experiment with single line drawings of baby cows to populate a new domain and learn how to animate SVGs."
 published: "2024-07-08"
 tags:
- - "oss"
- - "code"
- - "nuxt"
- - "strapi"
+ - "SVG"
+ - "js"
+ - "animation"
 ---
 
 *TL;DR: Some weeks ago, I made a website with drawings of cows. It was a chance to experiment with single-line drawings and SVG animation.*
