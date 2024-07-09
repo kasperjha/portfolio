@@ -52,15 +52,6 @@ body {
     linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-color);
 }
-
-p a {
-  text-decoration: underline;
-  color: blue;
-}
-
-p a:hover {
-  color: red;
-}
 </style>
 
 <script setup>
