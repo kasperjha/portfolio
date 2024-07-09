@@ -17,6 +17,8 @@
 const route = useRoute();
 const { data } = await useAsyncData(() => queryContent().where({ 'slug': route.params.slug }).findOne());
 const post = data;
+
+useContentHead(data)
 </script>
 
 <style>
