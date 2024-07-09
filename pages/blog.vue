@@ -5,9 +5,7 @@
     </BasePageTitle>
 
     <section class="space-y-4">
-      <NuxtLink v-for="post in data" :to="`/posts/${post.slug}`">
-        <BlogPostCard :post="post" />
-      </NuxtLink>
+      <BlogPostCard v-for="post in data" :post="post" />
     </section>
   </div>
 </template>
