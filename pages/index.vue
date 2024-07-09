@@ -6,8 +6,8 @@
 
     <div class="flex flex-col items-center text-center gap-5">
       <img src="/me.jpeg" alt="" class="min-w-40 h-40 w-40 rounded-full border-[5px]">
-        <h1 class="text-2xl font-bold">Kasper JH Alfarnes</h1>
       <div class="space-y-2 max-w-sm flex flex-col items-center">
+        <BasePageTitle>Kasper JH Alfarnes</BasePageTitle>
         <p class="text-md">Hi there! I'm a freelance software developer, web designer and soon to be Computer Science
           graduate.</p>
       </div>
