@@ -1,5 +1,5 @@
 <template>
-  <button class="py-2 px-4 border flex items-center gap-1 rounded-md" :class="variantStyles">
+  <button class="py-2 px-4 border flex justify-center items-center gap-1 rounded-md" :class="variantStyles">
     <slot></slot>
   </button>
 </template>
