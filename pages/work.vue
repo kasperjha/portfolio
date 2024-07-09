@@ -1,41 +1,28 @@
 <template>
-  <div class="space-y-6 mb-48 ">
+  <div class="mb-48">
 
-    <h1 class="text-3xl font-bold py-2">Work</h1>
+    <BasePageTitle class="mb-2">
+      Work
+    </BasePageTitle>
 
-    <p>
+    <p class="mb-8">
       These websites have been designed and developed by
       me. You can read about the project or visit an online demo
       by interacting with one of the cards below.
     </p>
 
     <div class="space-y-4">
-      <ProjectCard
-        v-for="project in projects"
-        :key="project.title"
-        :project="project"
+      <ProjectCard v-for="project in projects" :key="project.title" :project="project"
         :selected="selectedProject !== null && project.title == selectedProject.title"
-        @click="selectProject(project)"
-      />
+        @click="selectProject(project)" />
     </div>
 
-    <Transition
-      enterActiveClass="ease-out duration-200"
-      leaveActiveClass="ease-in duration-100"
-      enterFromClass=" translate-y-52 "
-      enterToClass="translate-y-0"
-      leaveFromClass="translate-y-0"
-      leaveToClass="translate-y-52"
-      mode="out-in"
-    >
-      <ProjectDetails
-        style="will-change: transform;"
-        class="transform transition-transform transform-gpu"
-        v-if="selectedProject !== null"
-        :key="selectedProject.title"
-        :project="selectedProject"
-        @close="selectedProject = null"
-      />
+    <Transition enterActiveClass="ease-out duration-200" leaveActiveClass="ease-in duration-100"
+      enterFromClass=" translate-y-52 " enterToClass="translate-y-0" leaveFromClass="translate-y-0"
+      leaveToClass="translate-y-52" mode="out-in">
+      <ProjectDetails style="will-change: transform;" class="transform transition-transform transform-gpu"
+        v-if="selectedProject !== null" :key="selectedProject.title" :project="selectedProject"
+        @close="selectedProject = null" />
     </Transition>
   </div>
 </template>

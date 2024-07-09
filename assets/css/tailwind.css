@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  p a {
+    @apply underline text-purple-600 hover:text-purple-800;
+  }
+
+  p a:hover {}
+}

@@ -9,6 +9,7 @@
           <NavItem destination="/" name="kakka.dev" class="font-bold mr-auto" />
           <NavItem destination="/now/" name="now" />
           <NavItem destination="/work/" name="work" />
+          <NavItem destination="/blog/" name="blog" />
           <NavItem destination="/contact/" name="contact" />
           <NavItem destination="https://plausible.kakk.dev/kakka.dev" name="stats" external class="hidden sm:block" />
         </div>
@@ -50,15 +51,6 @@ body {
     linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-color);
-}
-
-p a {
-  text-decoration: underline;
-  color: blue;
-}
-
-p a:hover {
-  color: red;
 }
 </style>
 
