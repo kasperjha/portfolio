@@ -16,9 +16,9 @@
               See Projects
             </BaseButton>
           </NuxtLink>
-          <NuxtLink to="/contact">
+          <NuxtLink to="/blog">
             <BaseButton variant="secondary">
-              Reach out!
+              See blogposts
             </BaseButton>
           </NuxtLink>
         </div>
