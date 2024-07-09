@@ -70,6 +70,6 @@ While not the best use of my time, it was great to get it out of my system and l
 
 It was also a good chance to collect a piece of memorabilia from departing university friends, as many are leaving the city for good this year.
 
-Maybe in a future procrastination session, I'll look at using the native SVG `animation` element and try some more challenging effects.
+Maybe in a future procrastination session, I'll look at using the native SVG `animate` element and try some more challenging effects.
 
 Thanks for reading!
