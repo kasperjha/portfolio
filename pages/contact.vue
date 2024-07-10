@@ -13,7 +13,7 @@
 
 <script setup>
 useHead({
-    title: 'kakka.dev - contact',
-    meta: [{ name: 'description', content: 'Contact information for kakka.dev. Social media links and email address.' }]
+    title: 'alfarnes.dev - contact',
+    meta: [{ name: 'description', content: 'Contact information for alfarnes.dev. Social media links and email address.' }]
 });
 </script>

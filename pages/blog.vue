@@ -19,7 +19,7 @@
 const data = await queryContent('posts').find();
 
 useSeoMeta({
-  title: 'kakka.dev - blog',
+  title: 'alfarnes.dev - blog',
   description: 'Once in a while I write about software, design and ongoing projects. Please do reach out if you have any thoughts, comments or suggestions.'
 })
 

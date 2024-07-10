@@ -1,5 +1,5 @@
 <template>
-  <component :is="headingTag" class="uppercase text-black text-md">
+  <component :is="headingTag" class="uppercase text-gray-900 text-md">
     <slot></slot>
   </component>
 </template>

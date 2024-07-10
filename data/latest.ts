@@ -1,6 +1,7 @@
 import { LatestEntry } from "../types/LatestEntry";
 
 export const latest: LatestEntry[] = [
+  { date: '2024-07-01', content: 'First day at new job' },
   { date: '2024-05-22', content: 'Changing my GitHub username...' },
   { date: '2024-05-11', content: 'Hacking on a sideproject with realtime multiplayer pointer movement' },
   { date: '2024-05-09', content: 'Writing my BSc. thesis on "Hardware security in IoT"' },
