@@ -17,13 +17,8 @@
       <main class="flex-grow pt-10 pb-20">
         <NuxtPage />
       </main>
-      <footer class="flex justify-center py-4 text-xs italic text-gray-700">
-        <p>
-          Developed with <a href="https://nuxtjs.org">Nuxt</a>,
-          <a href="https://nuxtjs.org">Vue</a> and
-          <a href="https://tailwindcss.com">Tailwind</a>. View <a href="https://github.com/kasperjha/kakka.dev">on
-            GitHub</a>.
-        </p>
+      <footer class="flex gap-2 justify-center py-4 text-sm italic text-gray-700">
+        <p>Made with ❤️ Source code on <a href="https://github.com/kasperjha/kakka.dev">GitHub</a></p>
       </footer>
     </section>
   </div>
