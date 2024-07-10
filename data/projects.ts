@@ -18,9 +18,9 @@ export const projects: Project[] = [
     technologies: ['pocketbase', 'gsap']
   },
   {
-    title: 'kakka.dev',
+    title: 'alfarnes.dev',
     short_description: 'Personal portfolio website for demonstrating past web development projects.',
-    github_url: 'https://github.com/kasperjha/kakka.dev',
+    github_url: 'https://github.com/kasperjha/portfolio',
     project_palette: 'blue',
     technologies: ['vue', 'nuxt']
   },

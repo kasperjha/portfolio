@@ -32,7 +32,7 @@ import { Project } from '../types/Projects';
 import { projects } from '../data/projects'
 
 useSeoMeta({
-  title: 'kakka.dev - work',
+  title: 'alfarnes.dev - work',
   description: 'Websites built and designed by Kasper JH. Alfarnes. Check out live websites, online demos, github repos and see the project\'s tech stack.'
 });
 

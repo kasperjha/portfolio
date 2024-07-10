@@ -23,8 +23,8 @@
 import { latest } from '~/data/latest'
 
 useSeoMeta({
-  title: 'kakka.dev - now',
-  ogTitle: 'kakka.dev - now',
+  title: 'alfarnes.dev - now',
+  ogTitle: 'alfarnes.dev - now',
   description: 'Read about what\'s been my focus lately.',
   ogDescription: 'Read about what\'s been my focus lately.',
   ogImage: '/me.jpeg'
