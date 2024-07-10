@@ -7,7 +7,8 @@ export const projects: Project[] = [
     website_url: 'https://kalf.no',
     github_url: 'https://github.com/kasperjha/kalf.no',
     technologies: ['vanilla javascript', 'tailwindcss'],
-    project_palette: 'blue'
+    project_palette: 'blue',
+    related_post: 'Learning-SVG-animation-with-baby-cows',
   },
   {
     title: 'realtime-pointers',
