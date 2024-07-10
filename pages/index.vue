@@ -13,8 +13,8 @@
       </div>
     </div>
 
-    <section class="mt-32 text-gray-600 space-y-2">
-      <BaseSubHeading :level="2" class="text-black">WHAT I DO</BaseSubHeading>
+    <section class="mt-32 space-y-2">
+      <BaseSubHeading :level="2">WHAT I DO</BaseSubHeading>
       <p class="pb-4">
         I'm interested in the intersection of design and technology.
         Building for the web strikes a perfect balance, so I design and develop on freelance basis.
@@ -38,8 +38,8 @@
       </BaseButtonGroup>
     </section>
 
-    <section class="mt-32 text-gray-600 space-y-2">
-      <BaseSubHeading :level="2" class="text-black">RECENT WRITING</BaseSubHeading>
+    <section class="mt-32 space-y-2">
+      <BaseSubHeading :level="2">RECENT WRITING</BaseSubHeading>
       <p class="pb-6">
         Once in a while, I write about technology, design and ongoing projects.
         Here is my latest post:
@@ -47,8 +47,8 @@
       <BlogPostCard :post="newestPost" />
     </section>
 
-    <section class="mt-32 text-gray-600 space-y-2">
-      <BaseSubHeading :level="2" class="text-black">STAY IN TOUCH</BaseSubHeading>
+    <section class="mt-32 space-y-2">
+      <BaseSubHeading :level="2">STAY IN TOUCH</BaseSubHeading>
       <p class="pb-8">
         If you want to stay up to date on what im doing you can follow me here
       </p>
