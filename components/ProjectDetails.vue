@@ -21,6 +21,8 @@
         {{ project.short_description }}
       </p>
 
+      <BlogPostCard v-if="relatedPost" variant="small" :post="relatedPost" class="mt-6" />
+
       <div class="mt-10 text-sm">
         <NuxtLink v-if="project.website_url" :to="project.website_url" class="block">
           <BaseButton class="w-full" variant="primary">
@@ -46,7 +48,13 @@
 
 <script setup lang="ts">
 import { XMarkIcon } from '@heroicons/vue/24/solid'
-import { ArrowTopRightOnSquareIcon  } from '@heroicons/vue/16/solid'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/16/solid'
 import { Project } from '../types/Projects';
-defineProps<{ project: Project }>();
+import { Post } from '../types/Post';
+const props = defineProps<{ project: Project }>();
+
+const relatedPost = ref<null | Post>(null);
+if (props.project.related_post) {
+  relatedPost.value = await queryContent().where({ slug: props.project.related_post }).findOne();
+}
 </script>

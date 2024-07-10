@@ -6,4 +6,5 @@ export interface Project {
   demo_url?: string,
   technologies: string[],
   project_palette: 'sapling' | 'blue' | 'eyez' | 'toxic' | 'earth'
+  related_post?: string
 }
