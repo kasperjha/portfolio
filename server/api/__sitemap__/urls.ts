@@ -8,7 +8,7 @@ export default defineSitemapEventHandler(async (e) => {
   const urls = contentList
     .filter(c => c._dir == 'posts')
     .map(c => asSitemapUrl({
-      loc: `${c.slug}`,
+      loc: `/posts/${c.slug}`,
       lastmod: c.published
     }))
   return urls;
