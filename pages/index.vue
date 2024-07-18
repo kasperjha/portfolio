@@ -1,14 +1,13 @@
 <template>
   <div>
-    <NuxtLink to="/now">
-      <latest class="mb-14" />
-    </NuxtLink>
-
-    <div class="flex flex-col items-center text-center gap-5">
-      <img src="/me.jpeg" alt="" class="min-w-40 h-40 w-40 rounded-full border-[5px]">
-      <div class="space-y-2 max-w-sm flex flex-col items-center">
+    <div class="flex justify-center">
+      <div class="max-w-md text-center flex flex-col items-center">
+        <NuxtLink to="/now" class="w-full">
+          <latest />
+        </NuxtLink>
+        <img src="/me.jpeg" alt="" class="min-w-40 mt-12 mb-6 h-40 w-40 rounded-full border-[5px]">
         <BasePageTitle>Kasper JH Alfarnes</BasePageTitle>
-        <p class="text-md">Hi there! I'm a freelance software developer, web designer and soon to be Computer Science
+        <p class="text-md">Hi there! I'm a freelance software developer, web designer and soon to be CS
           graduate.</p>
       </div>
     </div>
