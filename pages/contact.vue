@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-lg">
+    <div>
         <BasePageTitle class="mb-2">
             Contact
         </BasePageTitle>
