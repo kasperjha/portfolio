@@ -28,7 +28,7 @@ if (post !== null) {
     ogDescription: post.value.description,
   })
 
-  defineOgImageComponent('BlogPostOgImage', {
+  defineOgImageComponent('BlogPost', {
     post: post.value
   })
 }
