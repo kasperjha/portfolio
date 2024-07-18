@@ -21,7 +21,7 @@ import { Post } from '../types/Post';
 
 interface Props {
   post: Post
-  variant: 'default' | 'small'
+  variant?: 'default' | 'small'
 }
 
 const props = withDefaults(defineProps<Props>(), {
