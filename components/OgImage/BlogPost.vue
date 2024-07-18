@@ -1,6 +1,6 @@
 <template>
   <div id="container" class="w-full">
-    <div class="h-full w-full bg-purple-50/50 flex items-center justify-center">
+    <div class="h-full w-full bg-purple-50 flex items-center justify-center">
       <div class="max-w-4xl mt-8">
         <h1 class="text-4xl m-0">{{ post.title }}</h1>
         <p class="m-0 text-3xl text-gray-600 pt-6">{{ post.description }}</p>
