@@ -2,7 +2,7 @@
   <div class="flex w-full justify-center">
 
 
-    <section
+    <div
       class="max-w-2xl w-full flex flex-col min-h-screen px-4 sm:px-8 leading-relaxed font-mono text-gray-700 break-words">
       <nav class="mt-6 mb-4">
         <div class="flex gap-x-4">
@@ -11,17 +11,19 @@
           <NavItem destination="/work/" name="work" />
           <NavItem destination="/blog/" name="blog" />
           <NavItem destination="/contact/" name="contact" />
-          <NavItem destination="https://plausible.kakk.dev/alfarnes.dev" name="stats" external
-            class="hidden sm:block" />
         </div>
       </nav>
       <main class="flex-grow pt-10 pb-20">
         <NuxtPage />
       </main>
-      <footer class="flex gap-2 justify-center py-4 text-sm italic text-gray-700">
-        <p>Made with ❤️ Source code on <a href="https://github.com/kasperjha/portfolio">GitHub</a></p>
+      <footer class="flex gap-2 text-center justify-center py-4 text-sm italic text-gray-700">
+        <p>
+          Made with ❤️
+          code on <a href="https://github.com/kasperjha/portfolio">GitHub</a>
+          📈 view <a href="https://plausible.kakk.dev/alfarnes.dev">visitor stats</a>
+        </p>
       </footer>
-    </section>
+    </div>
   </div>
 </template>
 
