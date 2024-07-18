@@ -18,20 +18,18 @@ const route = useRoute();
 const { data } = await useAsyncData(() => queryContent().where({ 'slug': route.params.slug }).findOne());
 const post = data;
 
-if (post !== null) {
-  useSeoMeta({
-    title: post.value.title,
-    description: post.value.description,
-    ogType: 'article',
-    ogUrl: `https://alfarnes.dev/posts/${post.value.slug}/`,
-    ogTitle: post.value.title,
-    ogDescription: post.value.description,
-  })
+useSeoMeta({
+  title: post.value.title,
+  description: post.value.description,
+  ogType: 'article',
+  ogUrl: `https://alfarnes.dev/posts/${post.value.slug}/`,
+  ogTitle: post.value.title,
+  ogDescription: post.value.description,
+})
 
-  defineOgImageComponent('BlogPost', {
-    post: post.value
-  })
-}
+defineOgImageComponent('BlogPost', {
+  post: post.value
+})
 
 </script>
 
