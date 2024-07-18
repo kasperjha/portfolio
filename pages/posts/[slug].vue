@@ -22,13 +22,17 @@ if (post !== null) {
   useSeoMeta({
     title: post.value.title,
     description: post.value.description,
-    ogImage: null,
     ogType: 'article',
     ogUrl: `https://alfarnes.dev/posts/${post.value.slug}/`,
     ogTitle: post.value.title,
     ogDescription: post.value.description,
   })
+
+  defineOgImageComponent('BlogPostOgImage', {
+    post: post.value
+  })
 }
+
 </script>
 
 <style>

@@ -68,6 +68,5 @@ useSeoMeta({
   ogTitle: 'alfarnes.dev',
   description: 'I\'m a freelance software developer, web designer and soon to be Computer Science graduate. Check out my projects, freelance availability and whats been my focus recently',
   ogDescription: 'I\'m a freelance software developer, web designer and soon to be Computer Science graduate.',
-  ogImage: '/me.jpeg'
 })
 </script>
