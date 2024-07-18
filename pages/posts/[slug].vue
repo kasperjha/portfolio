@@ -18,7 +18,17 @@ const route = useRoute();
 const { data } = await useAsyncData(() => queryContent().where({ 'slug': route.params.slug }).findOne());
 const post = data;
 
-useContentHead(data)
+if (post !== null) {
+  useSeoMeta({
+    title: post.value.title,
+    description: post.value.description,
+    ogImage: null,
+    ogType: 'article',
+    ogUrl: `https://alfarnes.dev/posts/${post.value.slug}/`,
+    ogTitle: post.value.title,
+    ogDescription: post.value.description,
+  })
+}
 </script>
 
 <style>
