@@ -1,7 +1,7 @@
 import { LatestEntry } from "../types/LatestEntry";
 
 export const latest: LatestEntry[] = [
-  { date: '2025-04-23', content: 'Announcing Klosure (see LinkedIn).' },
+  { date: '2025-04-23', content: 'Announcing klosure.dev on LinkedIn' },
   { date: '2025-04-07', content: 'Automating infrastructure with Ansible' },
   { date: '2025-04-02', content: "Renting a VPS at Hetzner Cloud" },
   { date: '2025-01-20', content: 'Finish the last course of my BSC.' },
