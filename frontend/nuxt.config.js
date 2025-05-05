@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', "@nuxt/image", "@nuxtjs/sitemap", "nuxt-og-image"],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', "@nuxt/image", "@nuxtjs/sitemap", "nuxt-og-image", './modules/static-strapi'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in', appear: true }
   },
