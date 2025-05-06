@@ -32,7 +32,7 @@ import { useStrapi } from '../composables/useStrapi';
 const strapi = useStrapi()
 
 const entries = ref<LatestEntry[]>([]);
-strapi.find<LatestEntry>('latest-updates')
+await strapi.find<LatestEntry>('latest-updates')
   .then((res) => entries.value = res.data)
   .catch((error) => console.error(error))
 
