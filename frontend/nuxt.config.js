@@ -12,5 +12,12 @@ export default defineNuxtConfig({
       '/api/__sitemap__/urls'
     ]
   },
-  compatibilityDate: '2024-07-08'
+  runtimeConfig: {
+    public: {
+      strapi: {
+        url: 'https://localhost:1337',
+      }
+    }
+  },
+  compatibilityDate: '2024-07-08',
 })

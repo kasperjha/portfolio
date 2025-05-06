@@ -15,7 +15,9 @@
 
     <div v-for="entry in entries" class="grid grid-cols-3 gap-x-2 gap-y-5 mb-10">
       <p class="text-purple-800">{{ entry.date }}</p>
-      <StrapiBlocksText :nodes="entry.content" />
+      <div class="col-span-2">
+        <StrapiBlocksText :nodes="entry.content" />
+      </div>
     </div>
 
   </div>
@@ -25,9 +27,9 @@
 import { ref } from 'vue';
 import Strapi from "strapi-sdk-js"
 import { LatestEntry } from '../types/LatestEntry';
+import { useStrapi } from '../composables/useStrapi';
 
-// TODO: set strapi url parameter
-const strapi = new Strapi()
+const strapi = useStrapi()
 
 const entries = ref<LatestEntry[]>([]);
 strapi.find<LatestEntry>('latest-updates')
