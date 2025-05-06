@@ -16,6 +16,7 @@
   "dependencies": {
     "@heroicons/vue": "^2.1.1",
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "nuxt-strapi-blocks-renderer": "^1.0.17",
     "strapi-sdk-js": "^3.0.0"
   }
 }

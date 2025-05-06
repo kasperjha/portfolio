@@ -15,7 +15,7 @@
 
     <div v-for="entry in entries" class="grid grid-cols-3 gap-x-2 gap-y-5 mb-10">
       <p class="text-purple-800">{{ entry.date }}</p>
-      <p class="col-span-2">{{ entry.content }}</p>
+      <StrapiBlocksText :nodes="entry.content" />
     </div>
 
   </div>
