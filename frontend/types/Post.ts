@@ -3,4 +3,5 @@ export interface Post {
   title: string
   description: string
   published: string
+  content: any;
 }
