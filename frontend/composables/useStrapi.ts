@@ -5,7 +5,6 @@ import Strapi from "strapi-sdk-js";
  */
 export function useStrapi() {
   const config = useRuntimeConfig();
-  console.log(config.public.strapi)
   return new Strapi({
     url: config.public.strapi.url
   })
