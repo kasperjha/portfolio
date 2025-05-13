@@ -37,6 +37,8 @@
       </BaseButtonGroup>
     </section>
 
+    <!-- TODO: reintroduce latest post highlight -->
+
     <section class="mt-32 space-y-2">
       <BaseSubHeading :level="2">STAY IN TOUCH</BaseSubHeading>
       <p class="pb-8">

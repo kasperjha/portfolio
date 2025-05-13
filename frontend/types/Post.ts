@@ -4,4 +4,5 @@ export interface Post {
   description: string
   published: string
   content: any;
+  // TODO: reintroduce tags concept
 }
