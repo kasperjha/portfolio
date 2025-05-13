@@ -8,7 +8,6 @@
           <img src="/me.jpeg" alt="Profile picture of Kasper Alfarnes"
             class="min-w-14 mr-4 size-14 rounded-full border-[4px] border-purple-600/50">
           <p class="mr-20 ">Kasper Alfarnes</p>
-          <span v-for="tag in post.tags" class="text-purple-500 mr-8">#{{ tag }}</span>
         </div>
       </div>
     </div>

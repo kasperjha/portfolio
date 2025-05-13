@@ -8,9 +8,6 @@
 
       <div class="space-x-6 text-xs text-purple-600">
         <span>{{ post.published }}</span>
-        <div class="space-x-3 inline">
-          <span v-for="tag in post.tags">#{{ tag }}</span>
-        </div>
       </div>
     </article>
   </NuxtLink>
