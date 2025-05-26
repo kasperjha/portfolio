@@ -9,6 +9,7 @@
           <NavItem destination="/" name="alfarnes.dev" class="font-bold mr-auto" />
           <NavItem destination="/now/" name="now" class="hidden sm:block" />
           <NavItem destination="/work/" name="work" />
+          <NavItem destination="/blog/" name="blog" />
           <NavItem destination="/contact/" name="contact" class="hidden sm:block" />
         </div>
       </nav>

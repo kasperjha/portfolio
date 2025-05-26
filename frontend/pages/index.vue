@@ -40,6 +40,15 @@
     <!-- TODO: reintroduce latest post highlight -->
 
     <section class="mt-32 space-y-2">
+      <BaseSubHeading :level="2">RECENT WRITING</BaseSubHeading>
+      <p class="pb-6">
+        Once in a while, I write about technology, design and ongoing projects.
+        Here is my latest post:
+      </p>
+      <BlogPostCard :post="newestPost" />
+    </section>
+
+    <section class="mt-32 space-y-2">
       <BaseSubHeading :level="2">STAY IN TOUCH</BaseSubHeading>
       <p class="pb-8">
         If you want to stay up to date on what im doing you can follow me here
@@ -51,4 +60,5 @@
 
 <script lang="ts" setup>
 import { ArrowLongRightIcon } from '@heroicons/vue/20/solid';
+const newestPost = await queryContent().sort({ published: -1 }).findOne()
 </script>
