@@ -45,6 +45,11 @@
       ],
       "required": true,
       "default": "blue"
+    },
+    "related_post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
     }
   }
 }
