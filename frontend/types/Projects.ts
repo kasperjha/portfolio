@@ -5,7 +5,7 @@ export interface Project {
   website_url?: string,
   github_url?: string,
   demo_url?: string,
-  technologies: string[],
+  technologies: string,
   project_palette: 'sapling' | 'blue' | 'eyez' | 'toxic' | 'earth'
   related_post?: string
 }

@@ -12,7 +12,7 @@
       </div>
 
       <div class="flex flex-wrap mt-2 gap-1">
-        <span v-for="technology in project.technologies" class="text-xs bg-blue-100/40 border border-blue-200 py-1 px-2 rounded-full text-blue-600 flex items-center">
+        <span v-for="technology in technologies" class="text-xs bg-blue-100/40 border border-blue-200 py-1 px-2 rounded-full text-blue-600 flex items-center">
           {{ technology }}
         </span>
       </div>
@@ -57,4 +57,5 @@ const relatedPost = ref<null | Post>(null);
 if (props.project.related_post) {
   relatedPost.value = await queryContent().where({ slug: props.project.related_post }).findOne();
 }
+const technologies = computed(() => props.project.technologies.split(','))
 </script>
