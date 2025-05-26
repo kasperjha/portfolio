@@ -39,7 +39,7 @@
 
     <!-- TODO: reintroduce latest post highlight -->
 
-    <section class="mt-32 space-y-2">
+    <section class="mt-32 space-y-2" v-if="newestPost">
       <BaseSubHeading :level="2">RECENT WRITING</BaseSubHeading>
       <p class="pb-6">
         Once in a while, I write about technology, design and ongoing projects.
@@ -60,5 +60,12 @@
 
 <script lang="ts" setup>
 import { ArrowLongRightIcon } from '@heroicons/vue/20/solid';
-const newestPost = await queryContent().sort({ published: -1 }).findOne()
+import type { Post } from '~/types/Post'
+
+const strapi = useStrapi();
+const newestPost = ref<Post | undefined>(undefined)
+
+await strapi.find('posts', { sort: 'published:desc' })
+  .then((res) => newestPost.value = res.data.length ? res.data[0] : undefined)
+  .catch((error) => console.log(error))
 </script>
