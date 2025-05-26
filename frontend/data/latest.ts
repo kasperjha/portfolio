@@ -1,5 +1,7 @@
 import { LatestEntry } from "../types/LatestEntry";
 
+// TODO: move this content to CMS
+
 export const latest: LatestEntry[] = [
   { date: '2025-04-23', content: 'Announcing klosure.dev on LinkedIn' },
   { date: '2025-04-07', content: 'Automating infrastructure with Ansible' },
