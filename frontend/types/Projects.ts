@@ -1,3 +1,5 @@
+import type {Post} from './Post'
+
 export interface Project {
   id: number,
   title: string,
@@ -7,5 +9,5 @@ export interface Project {
   demo_url?: string,
   technologies: string,
   project_palette: 'sapling' | 'blue' | 'eyez' | 'toxic' | 'earth'
-  related_post?: string
+  related_post?: Post
 }
