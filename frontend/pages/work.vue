@@ -53,7 +53,9 @@ useSeoMeta({
 const strapi = useStrapi();
 const projects = ref([]);
 
-await strapi.find('projects')
+await strapi.find('projects', {
+  populate: '*',
+})
   .then((res)=> projects.value = res.data)
   .catch((error)=> console.error(error))
 
