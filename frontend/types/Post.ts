@@ -3,6 +3,7 @@ export interface Post {
   title: string
   description: string
   published: string
-  content: any;
+  content: any
+  tags: string
   // TODO: reintroduce tags concept
 }
