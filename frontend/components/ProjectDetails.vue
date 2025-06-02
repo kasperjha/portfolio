@@ -57,6 +57,8 @@ import { XMarkIcon } from '@heroicons/vue/24/solid'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/16/solid'
 import type { Project } from '../types/Projects';
 import type { Post } from '../types/Post';
+import { parseStringList } from '../util/cms';
+import { computed } from 'vue';
 
 interface Props {
   project: Project
@@ -64,5 +66,5 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const technologies = computed(() => props.project.technologies.split(','))
+const technologies = computed(() => parseStringList(props.project.technologies))
 </script>
