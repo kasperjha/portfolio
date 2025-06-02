@@ -1,15 +1,19 @@
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import { serverQueryContent } from '#content/server'
 import { asSitemapUrl, defineSitemapEventHandler } from '#imports'
+import { Post } from '../../../types/Post';
 
 // defines sitemap urls for blogposts
 export default defineSitemapEventHandler(async (e) => {
-  const contentList = (await serverQueryContent(e).find()) as ParsedContent[]
-  const urls = contentList
-    .filter(c => c._dir == 'posts')
-    .map(c => asSitemapUrl({
-      loc: `/posts/${c.slug}`,
-      lastmod: c.published
+
+  let posts: Post[] = []
+
+  const strapi = useStrapi();
+  strapi
+    .find<Post>('posts').then((res) => posts = res.posts)
+    .catch((error) => console.error(error))
+
+  return posts
+    .map(post => asSitemapUrl({
+      loc: `/posts/${post.slug}`,
+      lastmod: post.published
     }))
-  return urls;
 })
