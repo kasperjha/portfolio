@@ -19,8 +19,6 @@
 import { ref } from 'vue';
 import { Post } from '../types/Post';
 
-const data = await queryContent('posts').find();
-
 const strapi = useStrapi();
 
 const posts = ref<Post[]>([]);
