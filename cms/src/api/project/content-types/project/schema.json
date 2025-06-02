@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "short_description": {
+      "type": "text",
+      "required": true
+    },
+    "website_url": {
+      "type": "string",
+      "required": false
+    },
+    "github_url": {
+      "type": "string"
+    },
+    "demo_url": {
+      "type": "string"
+    },
+    "technologies": {
+      "type": "string",
+      "regex": "^[a-zA-Z0-9]+(?:,[a-zA-Z0-9]+)*$"
+    },
+    "project_palette": {
+      "type": "enumeration",
+      "enum": [
+        "sapling",
+        "blue",
+        "eyez",
+        "toxic",
+        "earth"
+      ],
+      "required": true,
+      "default": "blue"
+    },
+    "related_post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
+    }
+  }
+}
