@@ -43,7 +43,6 @@
 
 <script setup lang="ts">
 import { Project } from '../types/Projects';
-import { projects } from '../data/projects'
 
 useSeoMeta({
   title: 'alfarnes.dev - work',

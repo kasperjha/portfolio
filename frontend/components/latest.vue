@@ -14,7 +14,8 @@
 
 <script setup lang="ts">
 import { BoltIcon } from '@heroicons/vue/16/solid';
-import { latest } from '~/data/latest';
+import type { LatestEntry } from '../types/LatestEntry'
+import { ref } from 'vue';
 
 const strapi = useStrapi()
 const latest = ref<LatestEntry | undefined>(undefined);
