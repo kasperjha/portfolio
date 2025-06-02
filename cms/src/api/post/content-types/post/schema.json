@@ -30,6 +30,10 @@
     },
     "description": {
       "type": "text"
+    },
+    "tags": {
+      "type": "string",
+      "regex": "^[a-zA-Z0-9]+(?:,[a-zA-Z0-9]+)*$"
     }
   }
 }
