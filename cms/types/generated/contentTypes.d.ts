@@ -463,7 +463,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.DefaultTo<'blue'>;
     publishedAt: Schema.Attribute.DateTime;
     related_post: Schema.Attribute.Relation<'oneToOne', 'api::post.post'>;
-    short_description: Schema.Attribute.String & Schema.Attribute.Required;
+    short_description: Schema.Attribute.Text & Schema.Attribute.Required;
     technologies: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
