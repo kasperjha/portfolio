@@ -1,9 +1,5 @@
 <template>
   <div>
-    <BasePageTitle class="mb-2">
-      Blog
-    </BasePageTitle>
-
     <p class="mb-8">
       Once in a while I write about software, design and ongoing projects.
       Please do reach out if you have any thoughts, comments or suggestions.

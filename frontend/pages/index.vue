@@ -16,7 +16,6 @@
     <p>
       If you need help with an existing Vue project I would also be interested in working together on a freelance basis.
       Visit my <NuxtLink to="/contact">contact page</NuxtLink>, to get in touch on LinkedIn.
-
     </p>
   </div>
 </template>
