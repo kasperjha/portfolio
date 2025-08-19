@@ -1,29 +1,46 @@
 <template>
-  <div class="flex w-full justify-center">
+  <div class="flex flex-col w-full items-center bg-neutral-100 text-neutral-600">
 
+    <div class="sm:max-w-3xl w-full min-h-screen px-5 py-5">
 
-    <div
-      class="max-w-2xl w-full flex flex-col min-h-screen px-4 sm:px-8 leading-relaxed font-mono text-gray-700 break-words">
-      <nav class="mt-6 mb-4">
-        <div class="flex gap-x-4">
-          <NavItem destination="/" name="alfarnes.dev" class="font-bold mr-auto" />
-          <NavItem destination="/now/" name="now" class="hidden sm:block" />
-          <NavItem destination="/work/" name="work" />
-          <NavItem destination="/blog/" name="blog" />
-          <NavItem destination="/contact/" name="contact" class="hidden sm:block" />
+      <div class="space-y-4 sm:grid sm:grid-cols-4 gap-y-16 gap-x-14">
+
+        <div class="flex gap-4 sm:gap-14 items-center sm:grid sm:col-span-full sm:grid-cols-subgrid">
+          <img
+            src="/me.jpeg"
+            alt=""
+            class="justify-self-end min-w-[60px] w-[60px] h-[60px] aspect-square rounded-full border-2"
+          >
+
+          <p class="sm:col-span-3 text-sm max-w-sm sm:text-base">
+            <span class="italic font-medium ">Hei! Hello!</span>
+            My name is Kasper (@kasperjha).
+            I live in Oslo. This is my portfolio website.
+          </p>
+
         </div>
-      </nav>
-      <main class="flex-grow pt-10 pb-20">
-        <NuxtPage />
-      </main>
-      <footer class="flex gap-2 text-center justify-center py-4 text-sm italic text-gray-700">
-        <p>
-          Made with ❤️
-          code on <a href="https://github.com/kasperjha/portfolio">GitHub</a>
-          📈 view <a href="https://plausible.kakk.dev/alfarnes.dev">visitor stats</a>
-        </p>
-      </footer>
+
+        <nav class="flex justify-center gap-4 sm:flex-col sm:justify-start sm:items-end sm:gap-0">
+          <NuxtLink class="underline" to="/">Home</NuxtLink>
+          <NuxtLink class="underline" to="/work">Work</NuxtLink>
+          <NuxtLink class="underline" to="/blog">Posts</NuxtLink>
+          <NuxtLink class="underline" to="/now">Latest</NuxtLink>
+          <NuxtLink class="underline" to="/contact">Contact</NuxtLink>
+        </nav>
+
+        <div class="col-span-3 pt-10 sm:pt-0 pb-16">
+          <NuxtPage />
+        </div>
+
+      </div>
     </div>
+    <footer class="col-span-4 flex gap-2 text-center justify-center py-4 text-sm italic text-gray-700">
+      <p>
+        Made with ❤️
+        code on <a href="https://github.com/kasperjha/portfolio">GitHub</a>
+        📈 view <a href="https://plausible.kakk.dev/alfarnes.dev">visitor stats</a>
+      </p>
+    </footer>
   </div>
 </template>
 
@@ -38,17 +55,6 @@
   opacity: 0;
   filter: blur(5px);
   transform: translateY(5px);
-}
-
-body {
-  --dot-bg: white;
-  --dot-color: gray;
-  --dot-size: 1px;
-  --dot-space: 20px;
-  background:
-    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    var(--dot-color);
 }
 </style>
 

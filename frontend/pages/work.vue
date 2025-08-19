@@ -1,14 +1,11 @@
 <template>
   <div class="mb-48">
-
-    <BasePageTitle class="mb-2">
-      Work
-    </BasePageTitle>
+    <BasePageTitle>Work</BasePageTitle>
 
     <p class="mb-8">
       These websites have been designed and developed by
-      me. You can read about the project or visit an online demo
-      by interacting with one of the cards below.
+      me. Some on freelance basis, some as personal projects.
+      Interact with the cards below for more.
     </p>
 
     <div class="space-y-4">

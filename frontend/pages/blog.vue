@@ -1,12 +1,10 @@
 <template>
   <div>
-    <BasePageTitle class="mb-2">
-      Blog
-    </BasePageTitle>
+    <BasePageTitle>Posts</BasePageTitle>
 
     <p class="mb-8">
-      Once in a while I write about software, design and ongoing projects.
-      Please do reach out if you have any thoughts, comments or suggestions.
+      I try writing once in a while about software, projects and design.
+      If you have any thoughts, feel free to get in touch on any platform.
     </p>
 
     <section class="space-y-4">
