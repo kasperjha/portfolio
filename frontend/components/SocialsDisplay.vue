@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
+  <div class="flex sm:justify-start justify-center flex-wrap gap-4 sm:gap-8">
     <NuxtLink to="https://instagram.com/kasperkode">
       <BaseIconCard>
         <IconInstagram class="w-10 h-10 text-purple-600" />
