@@ -4,7 +4,7 @@
 
     <div class="space-y-4">
       <div v-for="entry in entries" class="">
-        <p class="text-purple-800">{{ entry.date }}</p>
+        <p class="text-neutral-500">{{ entry.date }}</p>
         <div class="col-span-2">
           <StrapiBlocksText :nodes="entry.content" />
         </div>
