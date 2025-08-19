@@ -5,7 +5,7 @@
 
       <div class="space-y-4 sm:grid sm:grid-cols-4 gap-y-16 gap-x-14">
 
-        <div class="flex gap-4 sm:gap-14 items-center sm:grid sm:col-span-full sm:grid-cols-subgrid">
+        <div class="flex gap-4 sm:gap-14 items-center sm:grid sm:col-span-full sm:grid-cols-subgrid sm:pt-10">
           <img
             src="/me.jpeg"
             alt=""
