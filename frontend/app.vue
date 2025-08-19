@@ -24,6 +24,7 @@
           <NuxtLink class="underline" to="/">Home</NuxtLink>
           <NuxtLink class="underline" to="/work">Work</NuxtLink>
           <NuxtLink class="underline" to="/blog">Posts</NuxtLink>
+          <NuxtLink class="underline" to="/now">Latest</NuxtLink>
           <NuxtLink class="underline" to="/contact">Contact</NuxtLink>
         </nav>
 
