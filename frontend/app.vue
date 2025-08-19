@@ -21,10 +21,10 @@
         </div>
 
         <nav class="flex justify-center gap-4 sm:flex-col sm:justify-start sm:items-end sm:gap-0">
-          <NuxtLink class="underline" to="/">home</NuxtLink>
-          <NuxtLink class="underline" to="/work">work</NuxtLink>
-          <NuxtLink class="underline" to="/blog">posts</NuxtLink>
-          <NuxtLink class="underline" to="/contact">contact</NuxtLink>
+          <NuxtLink class="underline" to="/">Home</NuxtLink>
+          <NuxtLink class="underline" to="/work">Work</NuxtLink>
+          <NuxtLink class="underline" to="/blog">Posts</NuxtLink>
+          <NuxtLink class="underline" to="/contact">Contact</NuxtLink>
         </nav>
 
         <div class="col-span-3 pt-10 sm:pt-0 pb-16">
