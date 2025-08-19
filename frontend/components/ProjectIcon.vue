@@ -1,5 +1,5 @@
 <template>
-  <div class="h-10 w-10 flex items-center justify-center" :style="iconStyles">
+  <div class="h-10 w-10 flex items-center font-mono justify-center" :style="iconStyles">
     <slot></slot>
   </div>
 </template>
