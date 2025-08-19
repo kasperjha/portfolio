@@ -20,13 +20,11 @@
 
         </div>
 
-        <nav>
-          <ul class="flex gap-4 justify-center sm:flex-col sm:justify-start sm:items-end sm:gap-0">
-            <ul><NuxtLink class="underline" to="/">home</NuxtLink></ul>
-            <ul><NuxtLink class="underline" to="/work">work</NuxtLink></ul>
-            <ul><NuxtLink class="underline" to="/blog">posts</NuxtLink></ul>
-            <ul><NuxtLink class="underline" to="/contact">contact</NuxtLink></ul>
-          </ul>
+        <nav class="flex justify-center gap-4 sm:flex-col sm:justify-start sm:items-end sm:gap-0">
+          <NuxtLink class="underline" to="/">home</NuxtLink>
+          <NuxtLink class="underline" to="/work">work</NuxtLink>
+          <NuxtLink class="underline" to="/blog">posts</NuxtLink>
+          <NuxtLink class="underline" to="/contact">contact</NuxtLink>
         </nav>
 
         <div class="col-span-3 pt-10 sm:pt-0 pb-16">
