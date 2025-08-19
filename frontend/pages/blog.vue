@@ -10,13 +10,22 @@
     </p>
 
     <section class="space-y-4">
-      <BlogPostCard v-for="post in data" :post="post" />
+      <BlogPostCard v-for="post in posts" :post="post" />
     </section>
   </div>
 </template>
 
-<script setup>
-const data = await queryContent('posts').find();
+<script setup lang="ts">
+import { ref } from 'vue';
+import { Post } from '../types/Post';
+
+const strapi = useStrapi();
+
+const posts = ref<Post[]>([]);
+
+strapi.find<Post>('posts')
+  .then((res) => posts.value = res.data)
+  .catch((error) => console.error('Could not fetch posts: ', error))
 
 useSeoMeta({
   title: 'alfarnes.dev - blog',

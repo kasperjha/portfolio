@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', "@nuxt/image", "@nuxtjs/sitemap", "nuxt-og-image"],
+  modules: ['@nuxtjs/tailwindcss', "@nuxt/image", "@nuxtjs/sitemap", "nuxt-og-image", "nuxt-strapi-blocks-renderer"],
   app: {
     pageTransition: { name: 'page', mode: 'out-in', appear: true }
   },
@@ -12,5 +12,15 @@ export default defineNuxtConfig({
       '/api/__sitemap__/urls'
     ]
   },
-  compatibilityDate: '2024-07-08'
+  runtimeConfig: {
+    public: {
+      strapi: {
+        url: 'https://localhost:1337',
+      }
+    }
+  },
+  experimental: {
+    payloadExtraction: true
+  },
+  compatibilityDate: '2024-07-08',
 })

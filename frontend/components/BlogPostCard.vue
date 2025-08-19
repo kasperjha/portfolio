@@ -9,7 +9,7 @@
       <div class="space-x-6 text-xs text-purple-600">
         <span>{{ post.published }}</span>
         <div class="space-x-3 inline">
-          <span v-for="tag in post.tags">#{{ tag }}</span>
+          <span v-for="tag in tags">#{{ tag }}</span>
         </div>
       </div>
     </article>
@@ -17,7 +17,9 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import { Post } from '../types/Post';
+import { parseStringList } from '../util/cms';
 
 interface Props {
   post: Post
@@ -27,4 +29,6 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   variant: 'default'
 })
+
+const tags = computed(() => parseStringList(props.post.tags))
 </script>

@@ -7,20 +7,36 @@
     <p class="mb-8">
       On this page I share what i've been focusing on recently
       (<a href="https://nownownow.com/about">now page</a>).
-      Last updated on {{ latest[0].date }}.
+      <span v-if="entries.length">
+        Last updated on {{ entries[0].date }}.
+      </span>
     </p>
 
-    <div v-for="entry in latest" class="grid grid-cols-3 gap-x-2 gap-y-5 mb-10">
+
+    <div v-for="entry in entries" class="grid grid-cols-3 gap-x-2 gap-y-5 mb-10">
       <p class="text-purple-800">{{ entry.date }}</p>
-      <p class="col-span-2">{{ entry.content }}</p>
+      <div class="col-span-2">
+        <StrapiBlocksText :nodes="entry.content" />
+      </div>
     </div>
 
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+import Strapi from "strapi-sdk-js"
+import { LatestEntry } from '../types/LatestEntry';
+import { useStrapi } from '../composables/useStrapi';
 
-import { latest } from '~/data/latest'
+const strapi = useStrapi()
+
+const entries = ref<LatestEntry[]>([]);
+await strapi.find<LatestEntry>('latest-updates', {
+  sort: 'date:desc',
+})
+  .then((res) => entries.value = res.data)
+  .catch((error) => console.error(error))
 
 useSeoMeta({
   title: 'alfarnes.dev - now',

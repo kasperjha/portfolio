@@ -12,7 +12,7 @@
       </div>
 
       <div class="flex flex-wrap mt-2 gap-1">
-        <span v-for="technology in project.technologies" class="text-xs bg-blue-100/40 border border-blue-200 py-1 px-2 rounded-full text-blue-600 flex items-center">
+        <span v-for="technology in technologies" class="text-xs bg-blue-100/40 border border-blue-200 py-1 px-2 rounded-full text-blue-600 flex items-center">
           {{ technology }}
         </span>
       </div>
@@ -21,7 +21,13 @@
         {{ project.short_description }}
       </p>
 
-      <BlogPostCard v-if="relatedPost" variant="small" :post="relatedPost" class="mt-6" />
+      <BlogPostCard
+        v-if="project.related_post"
+        variant="small"
+        :post="project.related_post"
+        class="mt-6"
+      />
+
 
       <div class="mt-10 text-sm">
         <NuxtLink v-if="project.website_url" :to="project.website_url" class="block">
@@ -49,12 +55,16 @@
 <script setup lang="ts">
 import { XMarkIcon } from '@heroicons/vue/24/solid'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/16/solid'
-import { Project } from '../types/Projects';
-import { Post } from '../types/Post';
-const props = defineProps<{ project: Project }>();
+import type { Project } from '../types/Projects';
+import type { Post } from '../types/Post';
+import { parseStringList } from '../util/cms';
+import { computed } from 'vue';
 
-const relatedPost = ref<null | Post>(null);
-if (props.project.related_post) {
-  relatedPost.value = await queryContent().where({ slug: props.project.related_post }).findOne();
+interface Props {
+  project: Project
 }
+
+const props = defineProps<Props>();
+
+const technologies = computed(() => parseStringList(props.project.technologies))
 </script>
