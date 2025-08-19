@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full justify-center bg-neutral-100 text-neutral-600">
+  <div class="flex flex-col w-full items-center bg-neutral-100 text-neutral-600">
 
     <div class="sm:max-w-3xl w-full min-h-screen px-5 py-5">
 
@@ -33,15 +33,15 @@
           <NuxtPage />
         </div>
 
-        <footer class="col-span-4 flex gap-2 text-center justify-center py-4 text-sm italic text-gray-700">
-          <p>
-            Made with ❤️
-            code on <a href="https://github.com/kasperjha/portfolio">GitHub</a>
-            📈 view <a href="https://plausible.kakk.dev/alfarnes.dev">visitor stats</a>
-          </p>
-        </footer>
       </div>
     </div>
+    <footer class="col-span-4 flex gap-2 text-center justify-center py-4 text-sm italic text-gray-700">
+      <p>
+        Made with ❤️
+        code on <a href="https://github.com/kasperjha/portfolio">GitHub</a>
+        📈 view <a href="https://plausible.kakk.dev/alfarnes.dev">visitor stats</a>
+      </p>
+    </footer>
   </div>
 </template>
 
