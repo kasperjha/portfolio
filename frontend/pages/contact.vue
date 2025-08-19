@@ -1,5 +1,6 @@
 <template>
     <div>
+        <BasePageTitle>Contact</BasePageTitle>
         <SocialsDisplay />
     </div>
 </template>

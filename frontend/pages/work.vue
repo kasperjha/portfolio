@@ -1,5 +1,6 @@
 <template>
   <div class="mb-48">
+    <BasePageTitle>Work</BasePageTitle>
 
     <p class="mb-8">
       These websites have been designed and developed by
