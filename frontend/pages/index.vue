@@ -10,9 +10,9 @@
       </p>
 
       <p>
-        I take website commissions through my web devlopment agency Klosure.
+        I take website commissions through my web development agency Klosure.
         We build high-end custom websites for businesses in creative industries.
-        If your looking for one, please visit
+        If you're looking for one, please visit
         <NuxtLink to="https://klosure.dev">our website</NuxtLink> to schedule a call.
       </p>
 
