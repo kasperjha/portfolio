@@ -5,6 +5,6 @@ import Strapi from 'strapi-sdk-js'
  */
 export function useStrapi() {
   return new Strapi({
-    url: useRuntimeConfig().public.cmsUrl as string,
+    url: useRuntimeConfig().public.cms.url as string,
   })
 }

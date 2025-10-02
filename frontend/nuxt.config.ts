@@ -9,4 +9,12 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  runtimeConfig: {
+    public: {
+      cms: {
+        url: import.meta.env.VITE_PUBLIC_CMS_URL,
+      },
+    },
+  },
 })
