@@ -13,5 +13,13 @@ useHead({
 <template>
   <div>
     <TheNav />
+
+    <main class="pb-30">
+      <AppPadding class="flex flex-wrap gap-5">
+        <WorkItemWebsite label="egalteater.no" />
+        <WorkItemWebsite label="orkide.world" />
+        <WorkItemWebsite label="kalf.no" />
+      </AppPadding>
+    </main>
   </div>
 </template>
