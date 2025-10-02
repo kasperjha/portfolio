@@ -1,3 +1,0 @@
-# CMS
-
-TODO: write docs
