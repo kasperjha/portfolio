@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "websites",
+  "info": {
+    "singularName": "website",
+    "pluralName": "websites",
+    "displayName": "Website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "mockups": {
+      "type": "component",
+      "component": "app.website-mockups",
+      "repeatable": false,
+      "required": true
+    },
+    "about": {
+      "type": "component",
+      "component": "app.website-about",
+      "repeatable": false,
+      "required": true
+    },
+    "testemonial": {
+      "type": "component",
+      "component": "app.website-testemonial",
+      "repeatable": false
+    }
+  }
+}

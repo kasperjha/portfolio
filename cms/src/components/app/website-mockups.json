@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_app_website_mockups",
+  "info": {
+    "displayName": "WebsiteMockups",
+    "icon": "television"
+  },
+  "options": {},
+  "attributes": {
+    "mobile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desktop": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
