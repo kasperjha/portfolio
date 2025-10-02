@@ -1,6 +1,6 @@
 <template>
   <AppPadding class="py-10">
-    <nav class="flex">
+    <nav class="flex items-center justify-between">
       <div class="flex items-center gap-5">
         <img class="rounded-full size-14" src="/kasper-alfarnes-avatar.jpg">
         <div class="hidden sm:block">
@@ -12,6 +12,7 @@
           </p>
         </div>
       </div>
+      <NavToggle />
     </nav>
   </AppPadding>
 </template>
