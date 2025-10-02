@@ -13,15 +13,20 @@ const options = {
 const strapi = useStrapi()
 strapi.find('websites', options)
   .then(res => websites.value = res.data)
+
+function buildProjectUrl(documentId: string) {
+  return `/web-projects/${documentId}`
+}
 </script>
 
 <template>
   <AppPadding class="flex flex-wrap gap-5">
-    <WorkItemWebsite
+    <NuxtLink
       v-for="website in websites"
       :key="website.slug"
-      :website="website"
-      class="cursor-pointer"
-    />
+      :to="buildProjectUrl(website.documentId)"
+    >
+      <WorkItemWebsite :website="website" class="cursor-pointer" />
+    </NuxtLink>
   </AppPadding>
 </template>
