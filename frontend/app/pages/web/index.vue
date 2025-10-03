@@ -16,7 +16,7 @@ const strapi = useStrapi()
 strapi.find('websites', options)
   .then(res => websites.value = res.data)
 
-useBreadcrumbs([{ label: 'home', to: '/' }, { label: 'web projects' }])
+useBreadcrumbs([{ label: 'home', to: '/' }, { label: 'web' }])
 </script>
 
 <template>
