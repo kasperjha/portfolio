@@ -10,7 +10,7 @@ defineProps<Props>()
 
 <template>
   <AppCard label="links" class="w-3xs">
-    <div class="px-7 py-6">
+    <div class="px-7 py-6 font-light">
       <p>updated {{ formatRelativeTime(website.updatedAt) }}</p>
     </div>
   </AppCard>
