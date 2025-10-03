@@ -5,9 +5,9 @@
         <img class="rounded-full size-14" src="/kasper-alfarnes-avatar.jpg">
       </NuxtLink>
       <div>
-        <p class="text-base">
+        <h1 class="text-base">
           Kasper Alfarnes
-        </p>
+        </h1>
         <p class="text-xs font-mono text-neutral-600">
           Developer and designer
         </p>
