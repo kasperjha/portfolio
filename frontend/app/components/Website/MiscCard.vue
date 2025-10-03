@@ -11,6 +11,7 @@ defineProps<Props>()
 <template>
   <AppCard label="misc">
     <div class="px-7 py-6 font-light">
+      <p>published {{ formatRelativeTime(website.createdAt) }}</p>
       <p>updated {{ formatRelativeTime(website.updatedAt) }}</p>
     </div>
   </AppCard>
