@@ -5,8 +5,6 @@ interface Props {
   website: Website
 }
 defineProps<Props>()
-
-const tags = ['klosure', 'web', 'design']
 </script>
 
 <template>
@@ -22,8 +20,9 @@ const tags = ['klosure', 'web', 'design']
         </p>
 
         <div class="flex gap-px flex-wrap">
-          <div v-for="tag in tags" :key="tag" class="flex items-center font-mono text-xs h-7 px-3 bg-purple-100 text-purple-700">
-            {{ tag }}
+          <!-- TODO: make tags clickable -->
+          <div v-for="tag in website.tags" :key="tag" class="flex items-center font-mono text-xs h-7 px-3 bg-purple-100 text-purple-700">
+            {{ tag.name }}
           </div>
         </div>
       </div>

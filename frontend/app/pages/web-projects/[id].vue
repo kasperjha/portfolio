@@ -8,6 +8,7 @@ const options = {
     mockups: { populate: '*' },
     about: { populate: '*' },
     testemonial: { populate: '*' },
+    tags: { populate: '*' },
   },
 }
 

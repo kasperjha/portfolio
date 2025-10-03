@@ -31,6 +31,12 @@
       "type": "component",
       "component": "app.website-testemonial",
       "repeatable": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "websites"
     }
   }
 }
