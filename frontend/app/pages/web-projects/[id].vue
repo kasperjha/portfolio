@@ -17,7 +17,8 @@ await strapi.findOne('websites', route.params.id as string, options)
 </script>
 
 <template>
-  <AppPadding>
+  <AppPadding class="flex gap-5 items-start">
     <WebsiteMockupCard :website />
+    <WebsiteAboutCard :website />
   </AppPadding>
 </template>
