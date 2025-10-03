@@ -472,6 +472,7 @@ export interface ApiWebsiteWebsite extends Struct.CollectionTypeSchema {
   attributes: {
     about: Schema.Attribute.Component<'app.website-about', false> &
       Schema.Attribute.Required;
+    actuallyPublishedAt: Schema.Attribute.DateTime;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

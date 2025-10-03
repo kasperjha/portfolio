@@ -8,6 +8,7 @@ export interface Website {
   documentId: string
   slug: string
   live_url?: string
+  actuallyPublishedAt?: string
   mockups: WebsiteMockups
   about: WebsiteAbout
   testemonial?: WebsiteTestemonial

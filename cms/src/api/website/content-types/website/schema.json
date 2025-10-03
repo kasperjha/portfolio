@@ -18,6 +18,9 @@
     "live_url": {
       "type": "string"
     },
+    "actuallyPublishedAt": {
+      "type": "datetime"
+    },
     "mockups": {
       "type": "component",
       "component": "app.website-mockups",
