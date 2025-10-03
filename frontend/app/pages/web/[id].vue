@@ -26,26 +26,21 @@ useBreadcrumbs([
 
 <template>
   <AppPadding>
-    <WebsiteMockupCard :website class="max-w-[330px]" />
-    <div class="space-y-5 max-w-sm">
-      <WebsiteAboutCard :website />
-      <WebsiteTestemonialCard v-if="website.testemonial" :website />
-    </div>
-    <div class="space-y-5 max-w-2xs">
-      <WebsiteLinksCard :website />
-      <WebsiteMiscCard :website />
+    <div class="flex flex-row flex-wrap gap-5">
+      <div>
+        <WebsiteMockupCard :website="website" variant="horizontal" class="md:hidden" />
+        <WebsiteMockupCard :website="website" class="hidden md:block max-w-[330px]" />
+      </div>
+
+      <div class="flex flex-col gap-5 md:max-w-[330px] lg:max-w-[330px]">
+        <WebsiteAboutCard :website />
+        <WebsiteTestemonialCard v-if="website.testemonial" :website />
+      </div>
+
+      <div class="flex flex-col gap-5 md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:max-w-[680px] md:max-lg:w-full lg:w-[244px]">
+        <WebsiteLinksCard :website />
+        <WebsiteMiscCard :website />
+      </div>
     </div>
   </AppPadding>
-
-  <!-- <AppPadding class="flex gap-5 items-start">
-    <WebsiteMockupCard :website class="max-w-[330px]" />
-    <div class="space-y-5 max-w-sm">
-      <WebsiteAboutCard :website />
-      <WebsiteTestemonialCard v-if="website.testemonial" :website />
-    </div>
-    <div class="space-y-5 max-w-2xs">
-      <WebsiteLinksCard :website />
-      <WebsiteMiscCard :website />
-    </div>
-  </AppPadding> -->
 </template>
