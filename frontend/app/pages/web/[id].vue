@@ -7,7 +7,7 @@ const options = {
   populate: {
     mockups: { populate: '*' },
     about: { populate: '*' },
-    testemonial: { populate: '*' },
+    testimonial: { populate: '*' },
     tags: { populate: '*' },
     links: { populate: '*' },
   },
@@ -41,7 +41,7 @@ useBreadcrumbs([
 
       <div class="flex flex-col max-md:w-full gap-5 md:max-w-[330px] lg:max-w-[330px]">
         <WebsiteAboutCard :website />
-        <WebsiteTestemonialCard v-if="website.testemonial" :website />
+        <WebsiteTestimonialCard v-if="website.testimonial" :website />
       </div>
 
       <div class="flex flex-col max-md:w-full gap-5 md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:max-w-[680px] md:max-lg:w-full lg:w-[244px]">

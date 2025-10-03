@@ -489,7 +489,7 @@ export interface ApiWebsiteWebsite extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID & Schema.Attribute.Required;
     tags: Schema.Attribute.Relation<'manyToMany', 'api::tag.tag'>;
-    testemonial: Schema.Attribute.Component<'app.website-testemonial', false>;
+    testimonial: Schema.Attribute.Component<'app.website-testimonial', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -33,9 +33,9 @@
       "repeatable": false,
       "required": true
     },
-    "testemonial": {
+    "testimonial": {
       "type": "component",
-      "component": "app.website-testemonial",
+      "component": "app.website-testimonial",
       "repeatable": false
     },
     "tags": {

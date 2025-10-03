@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_app_website_testemonials",
+  "collectionName": "components_app_website_testimonials",
   "info": {
-    "displayName": "WebsiteTestemonial",
+    "displayName": "WebsiteTestimonial",
     "icon": "emotionHappy"
   },
   "options": {},
@@ -16,6 +16,7 @@
     },
     "title": {
       "type": "string",
+      "default": "title",
       "required": true
     },
     "avatar": {
@@ -23,10 +24,7 @@
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "company_logo": {
@@ -34,10 +32,7 @@
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     }
   },

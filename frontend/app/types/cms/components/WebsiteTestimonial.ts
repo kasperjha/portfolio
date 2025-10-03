@@ -1,6 +1,6 @@
 import type { Media } from '../Media'
 
-export interface WebsiteTestemonial {
+export interface WebsiteTestimonial {
   quote: string
   name: string
   title: string

@@ -37,22 +37,20 @@ export interface AppWebsiteMockups extends Struct.ComponentSchema {
   };
 }
 
-export interface AppWebsiteTestemonial extends Struct.ComponentSchema {
-  collectionName: 'components_app_website_testemonials';
+export interface AppWebsiteTestimonial extends Struct.ComponentSchema {
+  collectionName: 'components_app_website_testimonials';
   info: {
-    displayName: 'WebsiteTestemonial';
+    displayName: 'WebsiteTestimonial';
     icon: 'emotionHappy';
   };
   attributes: {
-    avatar: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
-      Schema.Attribute.Required;
-    company_logo: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    > &
-      Schema.Attribute.Required;
+    avatar: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    company_logo: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     quote: Schema.Attribute.Text & Schema.Attribute.Required;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'title'>;
   };
 }
 
@@ -62,7 +60,7 @@ declare module '@strapi/strapi' {
       'app.link': AppLink;
       'app.website-about': AppWebsiteAbout;
       'app.website-mockups': AppWebsiteMockups;
-      'app.website-testemonial': AppWebsiteTestemonial;
+      'app.website-testimonial': AppWebsiteTestimonial;
     }
   }
 }

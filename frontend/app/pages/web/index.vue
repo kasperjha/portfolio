@@ -8,7 +8,7 @@ const options = {
   populate: {
     mockups: { populate: '*' },
     about: { populate: '*' },
-    testemonial: { populate: '*' },
+    testimonial: { populate: '*' },
   },
   sort: ['actuallyPublishedAt:desc', 'publishedAt'],
 }

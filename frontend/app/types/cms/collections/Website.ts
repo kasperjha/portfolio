@@ -1,7 +1,7 @@
 import type { Link } from '../components/Link'
 import type { WebsiteAbout } from '../components/WebsiteAbout'
 import type { WebsiteMockups } from '../components/WebsiteMockups'
-import type { WebsiteTestemonial } from '../components/WebsiteTestemonial'
+import type { WebsiteTestimonial } from '../components/WebsiteTestimonial'
 import type { Tag } from './Tag'
 
 export interface Website {
@@ -11,7 +11,7 @@ export interface Website {
   actuallyPublishedAt?: string
   mockups: WebsiteMockups
   about: WebsiteAbout
-  testemonial?: WebsiteTestemonial
+  testimonial?: WebsiteTestimonial
   tags: Tag[]
   links: Link[]
 }
