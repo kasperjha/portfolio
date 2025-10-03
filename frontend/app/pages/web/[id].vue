@@ -17,6 +17,13 @@ const strapi = useStrapi()
 await strapi.findOne('websites', route.params.id as string, options)
   .then(res => website.value = res.data)
 
+useSeoMeta({
+  title: `Project: ${website.value.about.title}`,
+  ogTitle: `Project: ${website.value.about.title}`,
+  description: website.value.about.ingress,
+  ogDescription: website.value.about.ingress,
+})
+
 useBreadcrumbs([
   { label: 'home', to: '/' },
   { label: website.value.slug },

@@ -8,6 +8,23 @@ useHead({
     { rel: 'manifest', href: '/favicon/site.webmanifest' },
   ],
 })
+
+useSeoMeta({
+  title: 'Kasper Alfarnes',
+  ogTitle: 'Kasper Alfarnes',
+
+  description: 'Digital portfolio for graphic designer and developer Kasper Alfarnes.',
+  ogDescription: 'Digital portfolio for graphic designer and developer Kasper Alfarnes.',
+
+  author: 'Kasper Alfarnes',
+
+  ogSiteName: 'Kasper\'s portfolio',
+  ogLocale: 'no_NB',
+  ogType: 'website',
+  ogUrl: 'https://alfarnes.dev',
+
+  robots: 'index, follow',
+})
 </script>
 
 <template>
