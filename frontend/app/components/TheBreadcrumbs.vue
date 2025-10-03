@@ -4,10 +4,7 @@ const { breadcrumbs } = useBreadcrumbs()
 
 <template>
   <AppPadding>
-    <UBreadcrumb
-      class="hidden md:block"
-      :items="breadcrumbs"
-    >
+    <UBreadcrumb :items="breadcrumbs">
       <template #separator>
         <span class="text-xs">/</span>
       </template>
