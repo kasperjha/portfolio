@@ -21,7 +21,7 @@ defineProps<Props>()
 
         <div class="flex gap-px flex-wrap">
           <!-- TODO: make tags clickable -->
-          <div v-for="tag in website.tags" :key="tag" class="flex items-center font-mono text-xs h-7 px-3 bg-purple-100 text-purple-700">
+          <div v-for="tag in website.tags" :key="tag" class="flex items-center text-xs h-7 px-3 bg-purple-100 text-purple-700">
             {{ tag.name }}
           </div>
         </div>
