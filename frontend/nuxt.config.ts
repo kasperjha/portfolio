@@ -18,8 +18,4 @@ export default defineNuxtConfig({
     },
   },
 
-  strapiBlocksRenderer: {
-    blocksPrefix: 'RichText',
-    prefix: '',
-  },
 })
