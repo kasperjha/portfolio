@@ -10,6 +10,7 @@ const options = {
     about: { populate: '*' },
     testemonial: { populate: '*' },
   },
+  sort: ['actuallyPublishedAt:desc', 'publishedAt'],
 }
 
 const strapi = useStrapi()
