@@ -3,6 +3,7 @@ import type { Rich } from '../Rich'
 
 export interface Website {
   // TODO: type remaining fields
+  documentId: string
   slug: string
   mockups: {
     mobile: Media

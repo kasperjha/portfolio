@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { buildWebsiteProjectUrl } from '~/modules/utility/urls'
+
 // TODO: support preview feature
 const websites = ref()
 
@@ -14,10 +16,6 @@ const strapi = useStrapi()
 strapi.find('websites', options)
   .then(res => websites.value = res.data)
 
-function buildProjectUrl(documentId: string) {
-  return `/web-projects/${documentId}`
-}
-
 useBreadcrumbs([{ label: 'home', to: '/' }])
 </script>
 
@@ -26,7 +24,7 @@ useBreadcrumbs([{ label: 'home', to: '/' }])
     <NuxtLink
       v-for="website in websites"
       :key="website.slug"
-      :to="buildProjectUrl(website.documentId)"
+      :to="buildWebsiteProjectUrl(website)"
     >
       <WebsiteMockupCard :website="website" class="cursor-pointer" />
     </NuxtLink>
