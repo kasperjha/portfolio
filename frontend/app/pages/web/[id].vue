@@ -19,7 +19,6 @@ await strapi.findOne('websites', route.params.id as string, options)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
-  { label: 'web', to: '/web' },
   { label: website.value.slug },
 ])
 </script>
