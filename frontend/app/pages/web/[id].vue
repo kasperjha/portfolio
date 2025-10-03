@@ -28,7 +28,8 @@ useBreadcrumbs([
     <div class="flex flex-row flex-wrap gap-5">
       <div>
         <WebsiteMockupCard :website="website" variant="horizontal" class="md:hidden" />
-        <WebsiteMockupCard :website="website" class="hidden md:block max-w-[330px]" />
+        <WebsiteLiveCard v-if="website.live_url" :website="website" class="hidden md:block max-w-[330px]" />
+        <WebsiteMockupCard v-else :website="website" class="hidden md:block max-w-[330px]" />
       </div>
 
       <div class="flex flex-col gap-5 md:max-w-[330px] lg:max-w-[330px]">

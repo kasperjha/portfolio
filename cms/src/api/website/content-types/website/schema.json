@@ -15,6 +15,9 @@
       "type": "uid",
       "required": true
     },
+    "live_url": {
+      "type": "string"
+    },
     "mockups": {
       "type": "component",
       "component": "app.website-mockups",

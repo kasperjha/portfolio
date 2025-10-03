@@ -7,9 +7,10 @@ import type { Tag } from './Tag'
 export interface Website {
   documentId: string
   slug: string
+  live_url?: string
   mockups: WebsiteMockups
   about: WebsiteAbout
-  testemonial: WebsiteTestemonial
+  testemonial?: WebsiteTestemonial
   tags: Tag[]
   links: Link[]
 }
