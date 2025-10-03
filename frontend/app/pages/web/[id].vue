@@ -39,12 +39,12 @@ useBreadcrumbs([
         <WebsiteMockupCard v-else :website="website" class="hidden md:block max-w-[330px]" />
       </div>
 
-      <div class="flex flex-col gap-5 md:max-w-[330px] lg:max-w-[330px]">
+      <div class="flex flex-col max-md:w-full gap-5 md:max-w-[330px] lg:max-w-[330px]">
         <WebsiteAboutCard :website />
         <WebsiteTestemonialCard v-if="website.testemonial" :website />
       </div>
 
-      <div class="flex flex-col gap-5 md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:max-w-[680px] md:max-lg:w-full lg:w-[244px]">
+      <div class="flex flex-col max-md:w-full gap-5 md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:max-w-[680px] md:max-lg:w-full lg:w-[244px]">
         <WebsiteLinksCard v-if="website.links.length" :website />
         <WebsiteMiscCard :website />
       </div>
