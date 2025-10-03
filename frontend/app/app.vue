@@ -7,6 +7,9 @@ useHead({
     { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
     { rel: 'manifest', href: '/favicon/site.webmanifest' },
   ],
+  script: [
+    { 'defer': true, 'src': 'https://plausible.kakk.dev/js/plausible.js', 'data-domain': 'alfarnes.dev' },
+  ],
 })
 
 useSeoMeta({
