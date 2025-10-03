@@ -1,3 +1,4 @@
+import type { Link } from '../components/Link'
 import type { WebsiteAbout } from '../components/WebsiteAbout'
 import type { WebsiteMockups } from '../components/WebsiteMockups'
 import type { WebsiteTestemonial } from '../components/WebsiteTestemonial'
@@ -10,4 +11,5 @@ export interface Website {
   about: WebsiteAbout
   testemonial: WebsiteTestemonial
   tags: Tag[]
+  links: Link[]
 }

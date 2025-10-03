@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AppLink extends Struct.ComponentSchema {
+  collectionName: 'components_app_links';
+  info: {
+    displayName: 'Link';
+    icon: 'link';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface AppWebsiteAbout extends Struct.ComponentSchema {
   collectionName: 'components_app_website_abouts';
   info: {
@@ -47,6 +59,7 @@ export interface AppWebsiteTestemonial extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'app.link': AppLink;
       'app.website-about': AppWebsiteAbout;
       'app.website-mockups': AppWebsiteMockups;
       'app.website-testemonial': AppWebsiteTestemonial;

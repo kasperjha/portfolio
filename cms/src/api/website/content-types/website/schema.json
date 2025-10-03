@@ -37,6 +37,11 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "mappedBy": "websites"
+    },
+    "links": {
+      "type": "component",
+      "component": "app.link",
+      "repeatable": true
     }
   }
 }
