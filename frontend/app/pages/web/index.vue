@@ -20,7 +20,7 @@ useBreadcrumbs([{ label: 'home', to: '/' }, { label: 'web' }])
 </script>
 
 <template>
-  <AppPadding class="flex gap-5">
+  <AppPadding class="flex gap-5 flex-wrap">
     <NuxtLink
       v-for="website in websites"
       :key="website.slug"
