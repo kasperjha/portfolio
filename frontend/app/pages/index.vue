@@ -26,7 +26,8 @@ useBreadcrumbs([{ label: 'home', to: '/' }])
       :key="website.slug"
       :to="buildWebsiteProjectUrl(website)"
     >
-      <WebsiteMockupCard :website="website" class="cursor-pointer" />
+      <WebsiteMockupCard :website="website" variant="horizontal" class="sm:hidden cursor-pointer" />
+      <WebsiteMockupCard :website="website" class="hidden sm:block cursor-pointer max-w-[330px]" />
     </NuxtLink>
   </AppPadding>
 </template>
