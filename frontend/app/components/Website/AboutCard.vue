@@ -27,11 +27,8 @@ defineProps<Props>()
         </div>
       </div>
 
-      <div class="space-y-3 font-light">
-        <StrapiBlocksText
-          v-if="website.about.description"
-          :nodes="website.about.description"
-        />
+      <div v-if="website.about.description" class="space-y-3 font-light">
+        <StrapiBlocksText :nodes="website.about.description" />
       </div>
     </div>
   </AppCard>
