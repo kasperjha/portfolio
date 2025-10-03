@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "websites",
+  "info": {
+    "singularName": "website",
+    "pluralName": "websites",
+    "displayName": "Website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "live_url": {
+      "type": "string"
+    },
+    "actuallyPublishedAt": {
+      "type": "datetime"
+    },
+    "mockups": {
+      "type": "component",
+      "component": "app.website-mockups",
+      "repeatable": false,
+      "required": true
+    },
+    "about": {
+      "type": "component",
+      "component": "app.website-about",
+      "repeatable": false,
+      "required": true
+    },
+    "testimonial": {
+      "type": "component",
+      "component": "app.website-testimonial",
+      "repeatable": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "websites"
+    },
+    "links": {
+      "type": "component",
+      "component": "app.link",
+      "repeatable": true
+    }
+  }
+}

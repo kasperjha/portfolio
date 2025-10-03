@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-cms",
+  "name": "cms",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -15,13 +15,14 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.12.7",
-    "@strapi/plugin-users-permissions": "5.12.7",
-    "@strapi/strapi": "5.12.7",
+    "@strapi/plugin-cloud": "5.25.0",
+    "@strapi/plugin-users-permissions": "5.25.0",
+    "@strapi/strapi": "5.25.0",
     "better-sqlite3": "11.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-plugin-config-sync": "^3.1.2",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
@@ -35,16 +36,7 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "5db06a08-6706-4e5d-a705-62605f629d90",
-    "installId": "43832cdf8862995f4860ecf43fed599c88f74473c0a4ab5a89cf6bb204937c0e"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@swc/core",
-      "better-sqlite3",
-      "core-js-pure",
-      "esbuild",
-      "sharp"
-    ]
+    "uuid": "b4d88d70-acc2-4442-816f-d3f7d1b8f1c5",
+    "installId": "f1cfd9674429507d339db1775d5774222d63602af824e0d3c6a403f57cb35ffb"
   }
 }
