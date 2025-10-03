@@ -8,7 +8,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <AppCard label="links" class="w-3xs">
+  <AppCard label="links">
     <div class="px-7 py-6">
       <div v-for="link in website.links" :key="link.url">
         <NuxtLink class=" flex items-center gap-1" :to="link.url">

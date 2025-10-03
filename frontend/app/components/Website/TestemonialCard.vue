@@ -8,7 +8,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <AppCard label="testemonial" class="max-w-sm">
+  <AppCard label="testemonial">
     <div class="px-7 py-6 space-y-6">
       <p class="font-light">
         "{{ website.testemonial.quote }}"

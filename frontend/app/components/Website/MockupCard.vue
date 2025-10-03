@@ -9,7 +9,7 @@ interface Props {
 </script>
 
 <template>
-  <AppCard :label="website.slug" class="w-[330px]">
+  <AppCard :label="website.slug">
     <img class="w-full h-[630px] object-cover" :src="useMediaUrl(website.mockups.mobile.url)"></img>
   </AppCard>
 </template>

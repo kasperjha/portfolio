@@ -8,7 +8,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <AppCard label="about" class="max-w-sm">
+  <AppCard label="about">
     <div class="px-7 py-8 space-y-8">
       <div class="space-y-4">
         <h2 class="text-2xl">
