@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui'],
+  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', 'nuxt-strapi-blocks-renderer'],
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()],
@@ -16,5 +16,10 @@ export default defineNuxtConfig({
         url: import.meta.env.VITE_PUBLIC_CMS_URL,
       },
     },
+  },
+
+  strapiBlocksRenderer: {
+    blocksPrefix: 'RichText',
+    prefix: '',
   },
 })
