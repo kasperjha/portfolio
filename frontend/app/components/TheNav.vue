@@ -2,7 +2,9 @@
   <AppPadding class="py-10">
     <nav class="flex items-center justify-between">
       <div class="flex items-center gap-5">
-        <img class="rounded-full size-14" src="/kasper-alfarnes-avatar.jpg">
+        <NuxtLink to="/">
+          <img class="rounded-full size-14" src="/kasper-alfarnes-avatar.jpg">
+        </NuxtLink>
         <div class="hidden sm:block">
           <p class="text-base">
             Kasper Alfarnes
