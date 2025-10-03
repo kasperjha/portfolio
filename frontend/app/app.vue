@@ -11,7 +11,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="text-neutral-700">
     <TheNav />
     <main class="pb-30">
       <NuxtPage />
