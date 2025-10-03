@@ -1,21 +1,13 @@
-import type { Media } from '../Media'
-import type { Rich } from '../Rich'
+import type { WebsiteAbout } from '../components/WebsiteAbout'
+import type { WebsiteMockups } from '../components/WebsiteMockups'
+import type { WebsiteTestemonial } from '../components/WebsiteTestemonial'
 import type { Tag } from './Tag'
 
 export interface Website {
-  // TODO: type remaining fields
   documentId: string
   slug: string
-  // TODO: extract component type
-  mockups: {
-    mobile: Media
-    desktop: Media
-  }
-  // TODO: extract component type
-  about: {
-    title: string
-    ingress: string
-    description: Rich
-  }
+  mockups: WebsiteMockups
+  about: WebsiteAbout
+  testemonial: WebsiteTestemonial
   tags: Tag[]
 }
