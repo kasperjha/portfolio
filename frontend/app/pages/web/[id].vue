@@ -38,7 +38,7 @@ useBreadcrumbs([
       </div>
 
       <div class="flex flex-col gap-5 md:max-lg:grid md:max-lg:grid-cols-2 md:max-lg:max-w-[680px] md:max-lg:w-full lg:w-[244px]">
-        <WebsiteLinksCard :website />
+        <WebsiteLinksCard v-if="website.links.length" :website />
         <WebsiteMiscCard :website />
       </div>
     </div>
