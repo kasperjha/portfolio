@@ -17,6 +17,8 @@ strapi.find('websites', options)
 function buildProjectUrl(documentId: string) {
   return `/web-projects/${documentId}`
 }
+
+useBreadcrumbs([{ label: 'home', to: '/' }])
 </script>
 
 <template>
@@ -26,7 +28,7 @@ function buildProjectUrl(documentId: string) {
       :key="website.slug"
       :to="buildProjectUrl(website.documentId)"
     >
-      <WorkItemWebsite :website="website" class="cursor-pointer" />
+      <WebsiteMockupCard :website="website" class="cursor-pointer" />
     </NuxtLink>
   </AppPadding>
 </template>

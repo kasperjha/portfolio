@@ -13,7 +13,8 @@ useHead({
 <template>
   <div class="text-neutral-700">
     <TheNav />
-    <main class="pb-30">
+    <main class="pb-30 space-y-8">
+      <TheBreadcrumbs />
       <NuxtPage />
     </main>
   </div>

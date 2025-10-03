@@ -14,6 +14,12 @@ const options = {
 const strapi = useStrapi()
 await strapi.findOne('websites', route.params.id as string, options)
   .then(res => website.value = res.data)
+
+useBreadcrumbs([
+  { label: 'home', to: '/' },
+  { label: 'web projects', to: '/web-projects' },
+  { label: website.value.slug },
+])
 </script>
 
 <template>
