@@ -18,6 +18,6 @@ await strapi.findOne('websites', route.params.id as string, options)
 
 <template>
   <AppPadding>
-    <WorkItemWebsite :website />
+    <WebsiteMockupCard :website />
   </AppPadding>
 </template>
