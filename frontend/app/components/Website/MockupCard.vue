@@ -15,21 +15,23 @@ interface Props {
   <AppCard :label="website.slug">
     <div v-if="variant === 'vertical'" class="aspect-[11/21]">
       <!-- assuming the verical mockup will not be shown larger than 330x630 px -->
-      <NuxtImg
+      <NuxtPicture
         class="w-full h-[630px] object-cover"
         width="330px"
         height="630px"
+        format="avif,webp"
         :src="useMediaUrl(website.mockups.mobile.url)"
         :alt="`Screenshot of ${website.slug} on mobile`"
       />
     </div>
     <!-- assuming horizontal mockup will not be shown larger than 557x343 px -->
     <div v-if="variant === 'horizontal'" class="aspect-[512/315]">
-      <NuxtImg
+      <NuxtPicture
         class="w-full object-cover"
         :src="useMediaUrl(website.mockups.desktop.url)"
-        width="557"
-        height="343"
+        width="557px"
+        height="343px"
+        format="avif,webp"
         :alt="`Screenshot of ${website.slug} on desktop`"
       />
     </div>
