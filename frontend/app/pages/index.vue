@@ -21,14 +21,14 @@ useBreadcrumbs([{ label: 'home', to: '/' }])
 </script>
 
 <template>
-  <AppPadding class="flex flex-wrap gap-5">
+  <AppPadding class="flex max-sm:flex-col sm:flex-wrap gap-5">
     <NuxtLink
       v-for="website in websites"
       :key="website.slug"
       :to="buildWebsiteProjectUrl(website)"
     >
       <WebsiteMockupCard :website="website" variant="horizontal" class="sm:hidden cursor-pointer" />
-      <WebsiteMockupCard :website="website" class="hidden sm:block cursor-pointer max-w-[330px]" />
+      <WebsiteMockupCard :website="website" class="hidden sm:block cursor-pointer w-[330px]" />
     </NuxtLink>
   </AppPadding>
 </template>
