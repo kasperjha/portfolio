@@ -2,7 +2,10 @@
   <AppPadding class="py-10">
     <nav class="flex items-center gap-5">
       <NuxtLink to="/" class="flex-none">
-        <img class="rounded-full size-14" src="/kasper-alfarnes-avatar.jpg">
+        <NuxtImg
+          class="rounded-full size-14"
+          src="/kasper-alfarnes-avatar.jpg"
+        />
       </NuxtLink>
       <div>
         <h1 class="text-base">
