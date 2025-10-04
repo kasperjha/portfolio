@@ -19,7 +19,6 @@ interface Props {
         width="330px"
         height="630px"
         sizes="330px"
-        format="webp"
         :img-attrs="{ class: 'w-full h-[630px] object-cover' }"
         :src="useMediaUrl(website.mockups.mobile.url)"
         :alt="`Screenshot of ${website.slug} on mobile`"
@@ -32,7 +31,6 @@ interface Props {
         width="557px"
         height="343px"
         sizes="557px"
-        format="webp"
         :alt="`Screenshot of ${website.slug} on desktop`"
         :img-attrs="{ class: 'w-full object-cover' }"
       />
