@@ -32,7 +32,7 @@ useBreadcrumbs([
 
 <template>
   <AppPadding>
-    <div class="flex flex-row flex-wrap gap-5">
+    <div class="flex max-md:flex-col md:flex-row md:flex-wrap gap-5">
       <div>
         <WebsiteMockupCard :website="website" variant="horizontal" class="md:hidden" />
         <WebsiteLiveCard v-if="website.live_url" :website="website" class="hidden md:block max-w-[330px]" />

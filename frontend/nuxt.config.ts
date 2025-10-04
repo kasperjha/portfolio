@@ -10,6 +10,12 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  image: {
+    // optimize images from CMS
+    domains: [new URL(import.meta.env.VITE_PUBLIC_CMS_URL).hostname],
+    format: ['avif', 'webp'],
+  },
+
   runtimeConfig: {
     public: {
       cms: {

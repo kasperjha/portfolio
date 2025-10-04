@@ -16,7 +16,14 @@ defineProps<Props>()
 
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-3.5">
-          <img class="rounded-full size-10" :src="useMediaUrl(website.testimonial.avatar.url)" :alt="website.testimonial.avatar.alternativeText">
+          <NuxtPicture
+            width="40px"
+            height="40px"
+            sizes="40px"
+            :src="useMediaUrl(website.testimonial.avatar.url)"
+            :alt="website.testimonial.avatar.alternativeText"
+            :img-attrs="{ class: 'rounded-full size-10' }"
+          />
           <div class="leading-none">
             <p class="font-bold">
               {{ website.testimonial.name }}
