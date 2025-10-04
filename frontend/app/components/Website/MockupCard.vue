@@ -22,6 +22,7 @@ interface Props {
         :img-attrs="{ class: 'w-full h-[630px] object-cover' }"
         :src="useMediaUrl(website.mockups.mobile.url)"
         :alt="`Screenshot of ${website.slug} on mobile`"
+        loading="lazy"
       />
     </div>
     <!-- assuming horizontal mockup will not be shown larger than 557x343 px -->
@@ -33,6 +34,7 @@ interface Props {
         sizes="557px"
         :alt="`Screenshot of ${website.slug} on desktop`"
         :img-attrs="{ class: 'w-full object-cover' }"
+        loading="lazy"
       />
     </div>
   </AppCard>
