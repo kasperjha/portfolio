@@ -4,6 +4,8 @@
       <NuxtLink to="/" class="flex-none">
         <NuxtImg
           class="rounded-full size-14"
+          width="56px"
+          height="56px"
           src="/kasper-alfarnes-avatar.jpg"
         />
       </NuxtLink>
