@@ -7,6 +7,7 @@
           width="56px"
           height="56px"
           src="/kasper-alfarnes-avatar.jpg"
+          alt="Go to landing page"
         />
       </NuxtLink>
       <div>
