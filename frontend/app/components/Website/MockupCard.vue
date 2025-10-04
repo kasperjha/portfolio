@@ -29,9 +29,9 @@ interface Props {
     <div v-if="variant === 'horizontal'" class="aspect-[512/315]">
       <NuxtPicture
         :src="useMediaUrl(website.mockups.desktop.url)"
-        width="557px"
-        height="343px"
-        sizes="557px"
+        width="1024px"
+        height="630px"
+        sizes="558px sm:686px"
         :alt="`Screenshot of ${website.slug} on desktop`"
         :img-attrs="{ class: 'w-full object-cover' }"
         loading="lazy"
