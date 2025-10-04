@@ -11,7 +11,6 @@ export default defineNuxtConfig({
   },
 
   image: {
-    // optimize images from CMS
     domains: [new URL(import.meta.env.VITE_PUBLIC_CMS_URL).hostname],
     format: ['avif', 'webp'],
   },
