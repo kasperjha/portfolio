@@ -19,7 +19,7 @@ interface Props {
         class="w-full h-[630px] object-cover"
         width="330px"
         height="630px"
-        format="avif,webp"
+        format="webp"
         :src="useMediaUrl(website.mockups.mobile.url)"
         :alt="`Screenshot of ${website.slug} on mobile`"
       />
@@ -31,7 +31,7 @@ interface Props {
         :src="useMediaUrl(website.mockups.desktop.url)"
         width="557px"
         height="343px"
-        format="avif,webp"
+        format="webp"
         :alt="`Screenshot of ${website.slug} on desktop`"
       />
     </div>
