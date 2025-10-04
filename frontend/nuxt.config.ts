@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       cms: {
-        url: import.meta.env.VITE_PUBLIC_CMS_URL,
+        url: 'https://cms.alfarnes.dev',
       },
     },
   },
