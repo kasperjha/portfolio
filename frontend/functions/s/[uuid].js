@@ -9,6 +9,6 @@ export async function onRequest(context) {
   const url = await links.get(uuid)
 
   return url
-    ? Response.redirect(url, 301)
+    ? Response.redirect(url, 302)
     : new Response('Link not found', { status: 404 })
 }
