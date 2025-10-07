@@ -1,9 +1,14 @@
-export function onRequest(context) {
+/**
+ * Handles shortlink redirects to `/s/<uuid>`.
+ * Shortlinks are defined in Cloudflare KV.
+ */
+export async function onRequest(context) {
   const { uuid } = context.params
+  const links = context.env.SHORTLINKS
 
-  if (uuid === 'abc123') {
-    return Response.redirect('https://alfarnes.dev/web/lu20n4q82b0ffnx7jlggv778', 301)
-  }
+  const url = await links.get(uuid)
 
-  return new Response('Link not found', { status: 404 })
+  return url
+    ? Response.redirect(url, 301)
+    : new Response('Link not found', { status: 404 })
 }
