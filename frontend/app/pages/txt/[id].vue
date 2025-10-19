@@ -16,6 +16,7 @@ useBreadcrumbs([
     <div class="max-w-lg">
       <ProseH2>{{ post.title }}</ProseH2>
 
+      <!-- TODO: change link styles and color -->
       <MDC :value="post.content" />
     </div>
   </AppPadding>
