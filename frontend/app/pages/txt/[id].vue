@@ -14,7 +14,9 @@ useBreadcrumbs([
 <template>
   <AppPadding>
     <div class="max-w-lg">
-      <h2>{{ post.title }}</h2>
+      <ProseH2>{{ post.title }}</ProseH2>
+
+      <MDC :value="post.content" />
     </div>
   </AppPadding>
 </template>
