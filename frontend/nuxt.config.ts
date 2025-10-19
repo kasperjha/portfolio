@@ -4,7 +4,13 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', 'nuxt-strapi-blocks-renderer'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxt/ui',
+    '@nuxtjs/mdc',
+    'nuxt-strapi-blocks-renderer',
+  ],
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()],
@@ -27,4 +33,9 @@ export default defineNuxtConfig({
     colorMode: false,
   },
 
+  mdc: {
+    highlight: {
+      theme: 'github-light',
+    },
+  },
 })
