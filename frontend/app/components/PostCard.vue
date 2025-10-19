@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { Post } from '~/types/cms/collections/Post'
+import { formatDate } from '~/modules/utility/date'
 
 interface Props {
   post: Post
@@ -17,8 +18,8 @@ const props = defineProps<Props>()
         {{ post.description }}
       </p>
       <div class="font-mono flex justify-between mt-auto text-sm">
-        <p>02 MAR, 24</p>
         <p>21 min read</p>
+        <p>{{ formatDate(post.publishedAt) }}</p>
       </div>
     </div>
   </article>
