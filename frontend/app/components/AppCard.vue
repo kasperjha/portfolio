@@ -6,7 +6,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <div class="rounded-xl border border-neutral-400 overflow-hidden">
+  <article class="rounded-xl border border-neutral-400 overflow-hidden">
     <div class="relative border-b border-neutral-400 bg-neutral-100 h-9 ">
       <slot name="header">
         <div class="h-full flex justify-center items-center">
@@ -17,5 +17,5 @@ defineProps<Props>()
       </slot>
     </div>
     <slot />
-  </div>
+  </article>
 </template>
