@@ -6,6 +6,16 @@
   "locale": null,
   "permissions": [
     {
+      "documentId": "ub4jyc6tn3uliajwrz1nwcar",
+      "action": "api::post.post.find",
+      "locale": null
+    },
+    {
+      "documentId": "fzltnom3vncjbvl96igsw7e7",
+      "action": "api::post.post.findOne",
+      "locale": null
+    },
+    {
       "documentId": "vfijxv2n3yyid34ne3j9kv5j",
       "action": "api::tag.tag.find",
       "locale": null
