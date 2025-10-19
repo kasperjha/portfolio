@@ -1,11 +1,13 @@
 <script lang="ts" setup>
 import type { Post } from '~/types/cms/collections/Post'
+import readingTime from 'reading-time/lib/reading-time'
 import { formatDate } from '~/modules/utility/date'
 
 interface Props {
   post: Post
 }
 const props = defineProps<Props>()
+const readingTimeMins = computed(() => Math.floor(readingTime(props.post.content).minutes))
 </script>
 
 <template>
@@ -18,8 +20,8 @@ const props = defineProps<Props>()
         {{ post.description }}
       </p>
       <div class="font-mono flex justify-between mt-auto text-sm">
-        <p>21 min read</p>
         <p>{{ formatDate(post.publishedAt) }}</p>
+        <p>{{ readingTimeMins }} min read</p>
       </div>
     </div>
   </article>
