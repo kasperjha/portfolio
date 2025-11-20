@@ -45,7 +45,7 @@ export interface AppWebsiteTestimonial extends Struct.ComponentSchema {
   };
   attributes: {
     avatar: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
-    company_logo: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    company_logo: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     quote: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String &

@@ -33,7 +33,12 @@ defineProps<Props>()
             </p>
           </div>
         </div>
-        <img class="h-10" :src="useMediaUrl(testimonial.company_logo.url)" :alt="testimonial.company_logo.alternativeText">
+        <img
+          v-if="testimonial.company_logo"
+          class="h-10"
+          :src="useMediaUrl(testimonial.company_logo.url)"
+          :alt="testimonial.company_logo.alternativeText"
+        >
       </div>
     </div>
   </AppCard>

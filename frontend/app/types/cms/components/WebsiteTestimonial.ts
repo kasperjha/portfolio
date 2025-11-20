@@ -5,5 +5,5 @@ export interface WebsiteTestimonial {
   name: string
   title: string
   avatar: Media
-  company_logo: Media
+  company_logo?: Media
 }
