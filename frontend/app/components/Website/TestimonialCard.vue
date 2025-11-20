@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { Website } from '~/types/cms/collections/Website'
+import type { WebsiteTestimonial } from '~/types/cms/components/WebsiteTestimonial'
 
 interface Props {
-  website: Website
+  testimonial: WebsiteTestimonial
 }
 defineProps<Props>()
 </script>
@@ -11,7 +11,7 @@ defineProps<Props>()
   <AppCard label="testimonial">
     <div class="px-7 py-6 space-y-6">
       <p class="font-light">
-        "{{ website.testimonial.quote }}"
+        "{{ testimonial.quote }}"
       </p>
 
       <div class="flex justify-between items-center">
@@ -20,20 +20,20 @@ defineProps<Props>()
             width="40px"
             height="40px"
             sizes="40px"
-            :src="useMediaUrl(website.testimonial.avatar.url)"
-            :alt="website.testimonial.avatar.alternativeText"
+            :src="useMediaUrl(testimonial.avatar.url)"
+            :alt="testimonial.avatar.alternativeText"
             :img-attrs="{ class: 'rounded-full size-10' }"
           />
           <div class="leading-none">
             <p class="font-bold">
-              {{ website.testimonial.name }}
+              {{ testimonial.name }}
             </p>
             <p class="font-light">
-              {{ website.testimonial.title }}
+              {{ testimonial.title }}
             </p>
           </div>
         </div>
-        <img class="h-10" :src="useMediaUrl(website.testimonial.company_logo.url)" :alt="website.testimonial.company_logo.alternativeText">
+        <img class="h-10" :src="useMediaUrl(testimonial.company_logo.url)" :alt="testimonial.company_logo.alternativeText">
       </div>
     </div>
   </AppCard>
