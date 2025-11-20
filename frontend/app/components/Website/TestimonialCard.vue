@@ -35,7 +35,7 @@ defineProps<Props>()
         </div>
         <img
           v-if="testimonial.company_logo"
-          class="h-10"
+          class="hidden sm:block h-10"
           :src="useMediaUrl(testimonial.company_logo.url)"
           :alt="testimonial.company_logo.alternativeText"
         >
