@@ -6,12 +6,12 @@
   "locale": null,
   "permissions": [
     {
-      "documentId": "ub4jyc6tn3uliajwrz1nwcar",
+      "documentId": "vnfgmxcx98scc55qlnn80whn",
       "action": "api::post.post.find",
       "locale": null
     },
     {
-      "documentId": "fzltnom3vncjbvl96igsw7e7",
+      "documentId": "ymgqcovkhpoduh3qezhqneju",
       "action": "api::post.post.findOne",
       "locale": null
     },

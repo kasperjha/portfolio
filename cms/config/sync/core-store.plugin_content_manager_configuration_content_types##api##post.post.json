@@ -147,7 +147,7 @@
         "id",
         "title",
         "slug",
-        "createdAt"
+        "description"
       ],
       "edit": [
         [
