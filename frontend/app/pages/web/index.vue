@@ -15,7 +15,10 @@ const strapi = useStrapi()
 await strapi.find('websites', options)
   .then(res => websites.value = res.data)
 
-useBreadcrumbs([{ label: 'home', to: '/' }, { label: 'web' }])
+useBreadcrumbs([
+  { label: 'home', to: '/' },
+  { label: 'web' },
+])
 </script>
 
 <template>

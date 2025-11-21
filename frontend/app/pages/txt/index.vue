@@ -3,6 +3,11 @@ const posts = ref()
 const strapi = useStrapi()
 await strapi.find('posts')
   .then(res => posts.value = res.data)
+
+useBreadcrumbs([
+  { label: 'home', to: '/' },
+  { label: 'txt' },
+])
 </script>
 
 <template>

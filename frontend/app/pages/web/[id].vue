@@ -26,6 +26,7 @@ useSeoMeta({
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
+  { label: 'web', to: '/web' },
   { label: website.value.slug },
 ])
 </script>

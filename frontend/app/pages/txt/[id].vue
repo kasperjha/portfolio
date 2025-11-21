@@ -7,6 +7,7 @@ await strapi.findOne('posts', route.params.id as string)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
+  { label: 'txt', to: '/txt' },
   { label: post.value.slug },
 ])
 </script>
