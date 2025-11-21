@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { buildWebsiteProjectUrl } from '~/modules/utility/urls'
 
 // TODO: support preview feature
 const websites = ref()
@@ -21,14 +20,10 @@ useBreadcrumbs([{ label: 'home', to: '/' }])
 </script>
 
 <template>
-  <AppPadding class="flex max-sm:flex-col sm:flex-wrap gap-5">
-    <NuxtLink
-      v-for="website in websites"
-      :key="website.slug"
-      :to="buildWebsiteProjectUrl(website)"
-    >
-      <WebsiteMockupCard :website="website" variant="horizontal" class="sm:hidden cursor-pointer" />
-      <WebsiteMockupCard :website="website" class="hidden sm:block cursor-pointer w-[330px]" />
-    </NuxtLink>
+  <AppPadding>
+    <DeskmatGrid>
+      <DeskmatWebsite v-for="website in websites" :key="website.slug" :website />
+      </template> -->
+    </DeskmatGrid>
   </AppPadding>
 </template>
