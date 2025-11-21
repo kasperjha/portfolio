@@ -23,7 +23,6 @@ useBreadcrumbs([{ label: 'home', to: '/' }])
   <AppPadding>
     <DeskmatGrid>
       <DeskmatWebsite v-for="website in websites" :key="website.slug" :website />
-      </template> -->
     </DeskmatGrid>
   </AppPadding>
 </template>
