@@ -10,7 +10,6 @@ const websites = ref<Website[]>()
 await strapi.find<Website>('websites', { populate: { mockups: { populate: '*' } } })
   .then(res => websites.value = res.data)
 
-useBreadcrumbs([{ label: 'home', to: '/' }])
 const posts = ref<Post[]>()
 await strapi.find<Post>('posts')
   .then(res => posts.value = res.data)
@@ -21,6 +20,8 @@ const deskmatItems = computed(() =>
     posts.value as Post[],
   )),
 )
+
+useBreadcrumbs([{ label: 'home' }])
 </script>
 
 <template>
