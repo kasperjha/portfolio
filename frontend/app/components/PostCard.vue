@@ -12,7 +12,7 @@ const readingTimeMins = computed(() => Math.floor(readingTime(props.post.content
 
 <template>
   <article class="rounded-xl border border-neutral-400 bg-neutral-100">
-    <div class="border-4 border-neutral-50 px-7 space-y-5 py-8 rounded-xl h-full shadow-md flex flex-col">
+    <div class="border-4 border-neutral-50 px-7 space-y-5 py-8 rounded-xl h-full flex flex-col">
       <h2 class="text-xl text-neutral-800 leading-8">
         {{ post.title }}
       </h2>
