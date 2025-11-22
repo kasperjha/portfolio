@@ -32,9 +32,9 @@ useSeoMeta({
 
 <template>
   <div class="text-neutral-700">
-    <TheNav />
+    <TheHeader />
     <main class="pb-30 space-y-8">
-      <TheBreadcrumbs />
+      <TheNavbar />
       <NuxtPage />
     </main>
   </div>
