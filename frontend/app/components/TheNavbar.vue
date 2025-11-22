@@ -11,8 +11,8 @@ const links = [
 
 <template>
   <AppPadding>
-    <nav class="rounded overflow-hidden">
-      <div class="h-16 flex items-center px-6 gap-6 bg-neutral-100 border border-neutral-400 rounded-t">
+    <nav class="rounded overflow-hidden bg-neutral-100">
+      <div class="h-14 flex items-center px-5 gap-6 border-neutral-100 border-2 bg-neutral-50 rounded">
         <NuxtLink
           v-for="link in links"
           :key="link.to"
