@@ -1,6 +1,6 @@
 <template>
   <AppPadding class="py-10">
-    <nav class="flex items-center gap-5">
+    <header class="flex items-center gap-5">
       <NuxtLink to="/" class="flex-none">
         <NuxtPicture
           width="56px"
@@ -19,6 +19,6 @@
           Developer and graphic designer
         </p>
       </div>
-    </nav>
+    </header>
   </AppPadding>
 </template>

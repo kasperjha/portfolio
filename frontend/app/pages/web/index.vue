@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { buildWebsiteProjectUrl } from '~/modules/utility/urls'
+import type { Website } from '~/types/cms/collections/Website'
 
 // TODO: support preview feature
-const websites = ref()
+const websites = ref<Website[]>()
 
 const options = {
   populate: {
@@ -14,21 +14,30 @@ const options = {
 }
 
 const strapi = useStrapi()
-await strapi.find('websites', options)
+await strapi.find<Website>('websites', options)
   .then(res => websites.value = res.data)
 
-useBreadcrumbs([{ label: 'home', to: '/' }, { label: 'web' }])
+useSeoMeta({
+  title: 'Websites',
+  description: `${websites.value?.length} websites I have designed and/or developed.`,
+  ogTitle: 'Websites',
+  ogDescription: `${websites.value?.length} websites I have designed and/or developed.`,
+})
+
+useBreadcrumbs([
+  { label: 'home', to: '/' },
+  { label: 'web' },
+])
 </script>
 
 <template>
-  <AppPadding class="flex gap-5 flex-wrap">
-    <NuxtLink
-      v-for="website in websites"
-      :key="website.slug"
-      :to="buildWebsiteProjectUrl(website)"
-    >
-      <WebsiteMockupCard :website="website" variant="horizontal" class="sm:hidden cursor-pointer" />
-      <WebsiteMockupCard :website="website" class="hidden sm:block cursor-pointer max-w-[330px]" />
-    </NuxtLink>
+  <AppPadding>
+    <DeskmatGrid>
+      <DeskmatWebsite
+        v-for="website in websites"
+        :key="website.slug"
+        :website
+      />
+    </DeskmatGrid>
   </AppPadding>
 </template>

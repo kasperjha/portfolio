@@ -6,7 +6,7 @@ export default defineAppConfig({
     breadcrumb: {
 
       slots: {
-        root: 'relative min-w-0 rounded bg-neutral-100 h-9 px-4 flex items-center',
+        root: 'relative min-w-0 bg-neutral-100 h-9 px-6 flex items-center',
         list: 'gap-3 flex h-full items-center',
         link: 'group relative flex items-center gap-1.5 text-xs min-w-0 focus-visible:outline-primary font-mono',
       },

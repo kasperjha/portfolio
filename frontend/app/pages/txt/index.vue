@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import type { Post } from '~/types/cms/collections/Post'
+
+const posts = ref<Post[]>()
+const strapi = useStrapi()
+await strapi.find<Post>('posts')
+  .then(res => posts.value = res.data)
+
+useBreadcrumbs([
+  { label: 'home', to: '/' },
+  { label: 'txt' },
+])
+
+useSeoMeta({
+  title: 'Posts',
+  description: `${posts.value?.length} posts about something I found interesting.`,
+  ogTitle: 'Posts',
+  ogDescription: `${posts.value?.length} posts about something I found interesting.`,
+})
+</script>
+
+<template>
+  <AppPadding>
+    <DeskmatGrid>
+      <DeskmatPost v-for="post in posts" :key="post.slug" :post />
+    </DeskmatGrid>
+  </AppPadding>
+</template>

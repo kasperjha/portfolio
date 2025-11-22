@@ -31,11 +31,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="text-neutral-700">
-    <TheNav />
-    <main class="pb-30 space-y-8">
-      <TheBreadcrumbs />
-      <NuxtPage />
-    </main>
+  <div class="flex justify-center">
+    <div class="text-neutral-700 w-full min-[760px]:max-w-[760px] min-[1110px]:max-w-[1110px] min-[1460px]:max-w-[1460px]">
+      <TheHeader />
+      <main class="pb-30 space-y-8">
+        <TheNavbar />
+        <NuxtPage />
+      </main>
+    </div>
   </div>
 </template>

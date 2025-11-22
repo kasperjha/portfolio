@@ -5,7 +5,10 @@ import type { WebsiteTestimonial } from '../components/WebsiteTestimonial'
 import type { Tag } from './Tag'
 
 export interface Website {
+  // TODO: extract to common type
   documentId: string
+  publishedAt: string
+
   slug: string
   live_url?: string
   actuallyPublishedAt?: string
