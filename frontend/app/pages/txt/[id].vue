@@ -1,24 +1,33 @@
 <script lang="ts" setup>
-const post = ref()
+import type { Post } from '~/types/cms/collections/Post'
+
+const post = ref<Post>()
 const route = useRoute()
 const strapi = useStrapi()
-await strapi.findOne('posts', route.params.id as string)
+await strapi.findOne<Post>('posts', route.params.id as string)
   .then(res => post.value = res.data)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
   { label: 'txt', to: '/txt' },
-  { label: post.value.slug },
+  { label: post.value?.slug },
 ])
+
+useSeoMeta({
+  title: post.value?.title,
+  description: post.value?.description,
+  ogTitle: post.value?.title,
+  ogDescription: post.value?.description,
+})
 </script>
 
 <template>
   <AppPadding>
     <div class="max-w-lg">
-      <ProseH2>{{ post.title }}</ProseH2>
+      <ProseH2>{{ post?.title }}</ProseH2>
 
       <!-- TODO: change link styles and color -->
-      <MDC :value="post.content" />
+      <MDC :value="post?.content" />
     </div>
   </AppPadding>
 </template>
