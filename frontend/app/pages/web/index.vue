@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import type { Website } from '~/types/cms/collections/Website'
+
 // TODO: support preview feature
-const websites = ref()
+const websites = ref<Website[]>()
 
 const options = {
   populate: {
@@ -12,8 +14,15 @@ const options = {
 }
 
 const strapi = useStrapi()
-await strapi.find('websites', options)
+await strapi.find<Website>('websites', options)
   .then(res => websites.value = res.data)
+
+useSeoMeta({
+  title: 'Websites',
+  description: `${websites.value?.length} websites I have designed and/or developed.`,
+  ogTitle: 'Websites',
+  ogDescription: `${websites.value?.length} websites I have designed and/or developed.`,
+})
 
 useBreadcrumbs([
   { label: 'home', to: '/' },

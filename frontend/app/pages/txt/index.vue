@@ -1,13 +1,22 @@
 <script setup lang="ts">
-const posts = ref()
+import type { Post } from '~/types/cms/collections/Post'
+
+const posts = ref<Post[]>()
 const strapi = useStrapi()
-await strapi.find('posts')
+await strapi.find<Post>('posts')
   .then(res => posts.value = res.data)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
   { label: 'txt' },
 ])
+
+useSeoMeta({
+  title: 'Posts',
+  description: `${posts.value?.length} posts about something I found interesting.`,
+  ogTitle: 'Posts',
+  ogDescription: `${posts.value?.length} posts about something I found interesting.`,
+})
 </script>
 
 <template>
