@@ -2,6 +2,7 @@
 const { breadcrumbs } = useBreadcrumbs()
 
 const links = [
+  { label: 'All', icon: 'uil:layer-group', to: '/' },
   { label: 'Websites', icon: 'uil:globe', to: '/web' },
   { label: 'Posts', icon: 'uil:file-edit-alt', to: '/txt' },
   // { label: 'Pictures', icon: 'uil:camera', to: '/img' },
