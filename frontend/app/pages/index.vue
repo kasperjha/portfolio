@@ -3,23 +3,29 @@ import type { Post } from '~/types/cms/collections/Post'
 import type { Website } from '~/types/cms/collections/Website'
 import { getDeskmatItems, sortDeskmatItems } from '~/modules/utility/deskmat'
 
-// TODO: support preview feature
-const strapi = useStrapi()
+const { data } = await useAsyncData(async () => {
+  const strapi = useStrapi()
+  const [websites, posts] = await Promise.all([
+    strapi.find<Website>('websites', { populate: { mockups: { populate: '*' } } }),
+    strapi.find<Post>('posts'),
+  ])
+  return { websites, posts }
+})
 
-const websites = ref<Website[]>()
-await strapi.find<Website>('websites', { populate: { mockups: { populate: '*' } } })
-  .then(res => websites.value = res.data)
+if (data.value === undefined) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: 'Could not load from CMS',
+  })
+}
 
-const posts = ref<Post[]>()
-await strapi.find<Post>('posts')
-  .then(res => posts.value = res.data)
-
-const deskmatItems = computed(() =>
-  sortDeskmatItems(getDeskmatItems(
-    websites.value as Website[],
-    posts.value as Post[],
-  )),
-)
+const deskmatItems = computed(() => {
+  if (!data.value) {
+    return []
+  }
+  const { posts, websites } = data.value
+  return sortDeskmatItems(getDeskmatItems(websites.data, posts.data))
+})
 
 useBreadcrumbs([{ label: 'home' }])
 </script>
