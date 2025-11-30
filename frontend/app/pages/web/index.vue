@@ -11,7 +11,7 @@ const options = {
 }
 
 const strapi = useStrapi()
-const { data: websites } = useAsyncData(
+const { data: websites } = await useAsyncData(
   async () => (await strapi.find<Website>('websites', options)).data,
 )
 

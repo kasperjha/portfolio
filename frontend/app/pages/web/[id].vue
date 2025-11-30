@@ -33,7 +33,7 @@ useSeoMeta({
   ogTitle: `Project: ${website.value?.about.title}`,
   description: website.value?.about.ingress,
   ogDescription: website.value?.about.ingress,
-  ogImage: getOgImage(website.value),
+  // ogImage: getOgImage(website.value),
 })
 
 useBreadcrumbs([

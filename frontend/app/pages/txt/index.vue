@@ -2,7 +2,7 @@
 import type { Post } from '~/types/cms/collections/Post'
 
 const strapi = useStrapi()
-const { data: posts } = useAsyncData(
+const { data: posts } = await useAsyncData(
   async () => (await strapi.find<Post>('posts')).data,
 )
 
