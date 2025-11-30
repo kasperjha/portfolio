@@ -12,13 +12,6 @@ const { data } = await useAsyncData(async () => {
   return { websites, posts }
 })
 
-if (data.value === undefined) {
-  throw createError({
-    statusCode: 500,
-    statusMessage: 'Could not load from CMS',
-  })
-}
-
 const deskmatItems = computed(() => {
   if (!data.value) {
     return []

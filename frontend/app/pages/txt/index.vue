@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { Post } from '~/types/cms/collections/Post'
 
-const posts = ref<Post[]>()
 const strapi = useStrapi()
-await strapi.find<Post>('posts')
-  .then(res => posts.value = res.data)
+const { data: posts } = useAsyncData(
+  async () => (await strapi.find<Post>('posts')).data,
+)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
