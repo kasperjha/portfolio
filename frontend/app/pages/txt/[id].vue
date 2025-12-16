@@ -2,6 +2,7 @@
 import type { Post } from '~/types/cms/collections/Post'
 
 const route = useRoute()
+const { enabled: previewEnabled } = usePreviewMode()
 
 const strapi = useStrapi()
 const { data: post } = await useAsyncData(`txt-${route.params.id}`, async () =>
@@ -23,6 +24,8 @@ useSeoMeta({
 
 <template>
   <AppPadding>
+    <PreviewHeader v-if="previewEnabled" />
+
     <div class="max-w-lg">
       <ProseH2>{{ post?.title }}</ProseH2>
 
