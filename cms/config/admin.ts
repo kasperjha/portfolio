@@ -1,3 +1,5 @@
+import { getPreviewPath } from "./preview";
+
 export default ({ env }) => ({
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
@@ -20,4 +22,19 @@ export default ({ env }) => ({
   watchIgnoreFiles: [
     '**/config/sync/**',
   ],
+  preview: {
+    enabled: true,
+    config: {
+      allowedOrigins: env('CLIENT_URL'),
+      async handler(uid: string, { documentId, status }) {
+        const baseUrl = env('CLIENT_URL')
+        const path = getPreviewPath(uid, documentId)
+        const params = new URLSearchParams({
+          preview: 'true',
+          status: status,
+        })
+        return path ? `${baseUrl}${path}?${params}` : null
+      }
+    }
+  }
 });
