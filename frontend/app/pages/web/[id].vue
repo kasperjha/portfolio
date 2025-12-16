@@ -14,9 +14,8 @@ const options = {
 }
 
 const strapi = useStrapi()
-const { data: website } = await useAsyncData(async () =>
-  (await strapi.findOne<Website>('websites', route.params.id as string, options)).data,
-)
+const { data: website } = await useAsyncData(`web-${route.params.id}`, async () =>
+  (await strapi.findOne<Website>('websites', route.params.id as string, options)).data)
 
 /**
  * Creates URL to og-image for website project.
