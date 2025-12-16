@@ -16,6 +16,10 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  experimental: {
+    payloadExtraction: true,
+  },
+
   image: {
     domains: [new URL(import.meta.env.VITE_PUBLIC_CMS_URL).hostname],
     format: ['avif', 'webp'],

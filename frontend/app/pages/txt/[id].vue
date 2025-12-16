@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import type { Post } from '~/types/cms/collections/Post'
 
-const post = ref<Post>()
 const route = useRoute()
+
 const strapi = useStrapi()
-await strapi.findOne<Post>('posts', route.params.id as string)
-  .then(res => post.value = res.data)
+const { data: post } = await useAsyncData(`txt-${route.params.id}`, async () =>
+  (await strapi.findOne<Post>('posts', route.params.id as string)).data)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
