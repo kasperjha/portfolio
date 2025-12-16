@@ -3,6 +3,8 @@ import type { Website } from '~/types/cms/collections/Website'
 
 const route = useRoute()
 
+const website = ref()
+
 const options = {
   populate: {
     mockups: { populate: '*' },
@@ -14,9 +16,8 @@ const options = {
 }
 
 const strapi = useStrapi()
-const { data: website } = await useAsyncData(async () =>
-  (await strapi.findOne<Website>('websites', route.params.id as string, options)).data,
-)
+await strapi.findOne('websites', route.params.id as string, options)
+  .then(res => website.value = res.data)
 
 /**
  * Creates URL to og-image for website project.
@@ -29,17 +30,17 @@ function getOgImage(website: Website) {
 }
 
 useSeoMeta({
-  title: `Project: ${website.value?.about.title}`,
-  ogTitle: `Project: ${website.value?.about.title}`,
-  description: website.value?.about.ingress,
-  ogDescription: website.value?.about.ingress,
-  // ogImage: getOgImage(website.value),
+  title: `Project: ${website.value.about.title}`,
+  ogTitle: `Project: ${website.value.about.title}`,
+  description: website.value.about.ingress,
+  ogDescription: website.value.about.ingress,
+  ogImage: getOgImage(website.value),
 })
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
   { label: 'web', to: '/web' },
-  { label: website.value?.slug },
+  { label: website.value.slug },
 ])
 </script>
 

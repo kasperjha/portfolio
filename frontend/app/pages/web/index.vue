@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import type { Website } from '~/types/cms/collections/Website'
 
+// TODO: support preview feature
+const websites = ref<Website[]>()
+
 const options = {
   populate: {
     mockups: { populate: '*' },
@@ -11,9 +14,8 @@ const options = {
 }
 
 const strapi = useStrapi()
-const { data: websites } = await useAsyncData(
-  async () => (await strapi.find<Website>('websites', options)).data,
-)
+await strapi.find<Website>('websites', options)
+  .then(res => websites.value = res.data)
 
 useSeoMeta({
   title: 'Websites',
