@@ -36,6 +36,7 @@ useSeoMeta({
       <TheHeader />
       <main class="pb-30 space-y-8">
         <TheNavbar />
+        <ThePreviewHeader />
         <NuxtPage />
       </main>
     </div>

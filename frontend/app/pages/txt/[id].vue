@@ -27,8 +27,6 @@ useSeoMeta({
 
 <template>
   <AppPadding>
-    <PreviewHeader v-if="previewEnabled" />
-
     <div class="max-w-lg">
       <ProseH2>{{ post?.title }}</ProseH2>
 
