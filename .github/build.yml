@@ -24,6 +24,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./cms
           push: true
           tags: ghcr.io/${{ github.repository }}/strapi:latest
