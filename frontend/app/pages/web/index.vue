@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { Website } from '~/types/cms/collections/Website'
+import { applyPreviewParams } from '~/utils/cms/applyPreviewParams'
 
 const options = {
   populate: {
@@ -11,9 +12,8 @@ const options = {
 }
 
 const strapi = useStrapi()
-const { data: websites } = await useAsyncData(
-  async () => (await strapi.find<Website>('websites', options)).data,
-)
+const { data: websites } = await useAsyncData(async () =>
+  (await strapi.find<Website>('websites', applyPreviewParams(options))).data)
 
 useSeoMeta({
   title: 'Websites',
