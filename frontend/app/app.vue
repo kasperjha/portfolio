@@ -33,10 +33,10 @@ useSeoMeta({
 <template>
   <div class="flex justify-center">
     <div class="text-neutral-700 w-full min-[760px]:max-w-[760px] min-[1110px]:max-w-[1110px] min-[1460px]:max-w-[1460px]">
+      <ThePreviewHeader />
       <TheAppHeader />
       <main class="pb-30 space-y-8">
         <TheNavbar />
-        <ThePreviewHeader />
         <NuxtPage />
       </main>
     </div>
