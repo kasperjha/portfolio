@@ -4,12 +4,9 @@ import { applyPreviewParams } from '~/utils/cms/applyPreviewParams'
 
 const strapi = useStrapi()
 const route = useRoute()
-
-const { data: post } = useAsyncData(`txt-${route.params.id}`, async () => {
-  return (await strapi.find<Post>('posts', applyPreviewParams({
-    filters: { documentId: { $eq: route.params.id } },
-  }))).data[0]
-})
+const documentId = route.params.id as string
+const { data: post } = useAsyncData(`txt-${documentId}`, async () =>
+  (await strapi.findOne<Post>('posts', documentId, applyPreviewParams({}))).data)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },
