@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 import type { Post } from '~/types/cms/collections/Post'
-
-const route = useRoute()
+import { applyPreviewParams } from '~/utils/cms/applyPreviewParams'
 
 const strapi = useStrapi()
-const { data: post } = await useAsyncData(`txt-${route.params.id}`, async () =>
-  (await strapi.findOne<Post>('posts', route.params.id as string)).data)
+const route = useRoute()
+const documentId = route.params.id as string
+const { data: post } = useAsyncData(`txt-${documentId}`, async () =>
+  (await strapi.findOne<Post>('posts', documentId, applyPreviewParams({}))).data)
 
 useBreadcrumbs([
   { label: 'home', to: '/' },

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { Website } from '~/types/cms/collections/Website'
+import { applyPreviewParams } from '~/utils/cms/applyPreviewParams'
 
 const route = useRoute()
 
@@ -14,8 +15,9 @@ const options = {
 }
 
 const strapi = useStrapi()
-const { data: website } = await useAsyncData(`web-${route.params.id}`, async () =>
-  (await strapi.findOne<Website>('websites', route.params.id as string, options)).data)
+const documentId = route.params.id as string
+const { data: website } = await useAsyncData(`web-${documentId}`, async () =>
+  (await strapi.findOne<Website>('websites', documentId, applyPreviewParams(options))).data)
 
 /**
  * Creates URL to og-image for website project.
