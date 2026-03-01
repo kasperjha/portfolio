@@ -6,9 +6,6 @@ on:
       - master
     paths:
       - "cms/**"
-  pull_request:
-    branches:
-      - master
 
 jobs:
   build-and-push:
