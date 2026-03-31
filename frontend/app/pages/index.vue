@@ -6,11 +6,8 @@ import { applyPreviewParams } from '~/utils/cms/applyPreviewParams'
 
 const { data: deskmatItems } = await useAsyncData(async () => {
   const strapi = useStrapi()
-  const [websites, posts] = await Promise.all([
-    strapi.find<Website>('websites', applyPreviewParams({ populate: { mockups: { populate: '*' } } })),
-    strapi.find<Post>('posts', applyPreviewParams({})),
-  ])
-  return sortDeskmatItems(getDeskmatItems(websites.data, posts.data))
+  const websites = await strapi.find<Website>('websites', applyPreviewParams({ populate: { mockups: { populate: '*' } } }))
+  return sortDeskmatItems(getDeskmatItems(websites.data, []))
 })
 
 useBreadcrumbs([{ label: 'home' }])
